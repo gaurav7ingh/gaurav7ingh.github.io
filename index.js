@@ -12,3 +12,16 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
+let TransitionEvent = () => {
+    let workOn = document.querySelector("body");
+    workOn.style.opacity = 1;
+}
+let workOn = document.getElementById("aboutSection");
+workOn.addEventListener("pointerover", ()=>{
+    document.getElementById("aboutSection").style.opacity = 1;
+})
+let scrolledOn = () => {
+    let workOn = document.getElementById("aboutSection");
+    workOn.style.opacity = 1;
+}
