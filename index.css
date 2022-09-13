@@ -9,6 +9,7 @@
     --lightest-slate: #ccd6f6;
     --white: #e6f1ff;
     --yellow: #f8c900;
+    --light-yellow: #fcd93e85;
     --yellow-tint: #f8cb0017;
     --pink: #f57dff;
     --blue: #57cbff;
@@ -30,6 +31,7 @@
     font: var(--font-sans);
 }
 
+
 .color {
     color: var(--light-slate);
 }
@@ -45,6 +47,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+body {
+    transition: 0.5s;
+}
+
+#checkBox,
+#ham {
+    display: none;
+
+}
+
 
 #nav>* {
     background-color: #0a192fee;
@@ -82,6 +95,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#selectSectionForHam {
+    display: none;
 }
 
 #selectSection>div>a:hover {
@@ -166,7 +183,7 @@ a {
 }
 
 #introduction {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin-top: 10px;
 }
 
@@ -174,9 +191,10 @@ a {
     color: var(--light-slate);
     line-height: 25px;
     font-family: var(--font-mono);
-    width: 55%;
+    width: 75%;
     margin-top: 1.3em;
     line-height: 27px;
+    font-size: 17;
 }
 
 mark {
@@ -186,5 +204,116 @@ mark {
 .aboutSection {
     margin-top: 150px;
     border: 1px solid wheat;
-    height: 3000px;
+    height: 300px;
+}
+
+#btn1 {
+    margin-top: 20px;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+    padding: 17px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#btn1:hover {
+    background-color: var(--yellow-tint);
+    cursor: pointer;
+}
+
+#myself {
+    display: flex;
+    justify-content: space-between;
+}
+
+#myself>p {
+    width: 50%;
+    text-align: justify;
+}
+
+#myImage {
+    width: 50%;
+    
+}
+
+#myImage>img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (min-width: 360px) and (max-width:800px) {
+
+    #left,
+    #right {
+        display: none;
+    }
+
+    #main .smallIntro {
+        width: 85%;
+    }
+
+    #selectSection>* {
+        display: none;
+    }
+
+    #selectSectionForHam {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        margin: auto;
+        justify-content: space-evenly;
+        text-align: center;
+        transition: 00.5s ease;
+        transform: translateX(100%);
+    }
+
+    #checkBox,
+    #ham {
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        transition: top 0.3s;
+        margin-top: 36px;
+        top: 7px;
+        right: 45px;
+    }
+
+    #checkBox {
+        z-index: 3;
+        margin-top: 36px;
+        top: 7px;
+        right: 45px;
+        opacity: 0;
+    }
+
+    #ham {
+        right: 40px;
+        top: -1;
+    }
+
+    #closeHam {
+        position: fixed;
+        right: 40px;
+        top: 35px;
+    }
+
+    #checkBox:checked+#selectSectionForHam {
+        transform: translateX(0);
+    }
+
+    #myself {
+        flex-direction: column;
+        margin: auto;
+    }
+   
+    #myself>#myImage,
+    #myself>p {
+        width: 100%;
+    }
+
 }
