@@ -258,6 +258,109 @@ mark {
     margin: auto;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project-content1,
+.project-content {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.project-overline {
+    margin: 10px 0px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    font-weight: 400;
+    text-align: right;
+}
+
+.project-title {
+    margin: 0px 0px 20px;
+    color: var(--lightest-slate);
+    font-size: clamp(24px, 5vw, 28px);
+    font-weight: 600;
+    text-align: right;
+    font-family: var(--font-sans);
+}
+
+.project-description {
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    background-color: var(--light-navy);
+    color: var(--light-slate);
+    font-size: var(--fz-lg);
+    font-family: var(--font-sans);
+    text-align: right;
+    z-index: 2;
+}
+
+.project-description>p {
+    background-color: var(--light-navy);
+}
+
+.project-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0px 10px;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 150px;
+}
+
+.fixLinkForImage {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+}
+
+.git {
+    right: 35;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1080px) {
     #left {
         left: 15px;
@@ -351,88 +454,44 @@ mark {
         margin: 0px 0px 10px;
         text-align: left;
     }
-}
 
+    #project {
+        display: block;
+    }
 
+    .project-content {
+        text-align: left;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+    }
 
+    .project-image {
+        opacity: 0.2;
+    }
 
+    .project-description {
+        text-align: left;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
 
+    .project-description>p {
+        background: none;
+    }
 
+    .project-tech-list {
+        padding-left: 0;
+        padding-right: 100px;
+    }
 
+    .fixLinkForImage {
+        left: 20px;
+    }
 
+    .goto {
+        left: 55px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.project-content {
-    position: absolute;
-    width: 50%;
-    right: 0px;
-}
-.project-content *{
-    background:none;
-}
-
-.project-overline {
-    margin: 10px 0px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: var(--fz-xs);
-    font-weight: 400;
-    text-align: right;
-}
-
-.project-title {
-    margin: 0px 0px 20px;
-    color: var(--lightest-slate);
-    font-size: clamp(24px, 5vw, 28px);
-    font-weight: 600;
-    text-align: right;
-    font-family: var(--font-sans);
-}
-
-.project-description {
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
-    padding: 25px;
-    border-radius: var(--border-radius);
-    background-color: var(--light-navy);
-    color: var(--light-slate);
-    font-size: var(--fz-lg);
-    font-family: var(--font-sans);
-    text-align: right;
-    z-index: 2;
-}
-
-.project-description>p {
-    background-color: var(--light-navy);
-}
-
-.project-tech-list {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin: 25px 0px 10px;
-    list-style: none;
-    width: 100%;
-    justify-content: space-between;
-    padding-left: 150px;
-}
-
-.fixLinkForImage {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 0;
-}
-.git{
-    right: 35;
 }
