@@ -1,7 +1,7 @@
 :root {
     --dark-navy: #020c1b;
-    --navy: #0a192f;
-    --light-navy: #112240;
+    --navy: #1A374D;
+    --light-navy: #316B83;
     --lightest-navy: #233554;
     --navy-shadow: rgba(2, 12, 27, 0.7);
     --dark-slate: #495670;
@@ -32,7 +32,7 @@
 
 
 .color {
-    color: var(--light-slate);
+    color: var(--lightest-slate);
 }
 
 .size {
@@ -60,7 +60,7 @@ body {
 
 
 #nav>* {
-    background-color: #0a192fee;
+    background-color: var(--navy);
 }
 
 #nav {
@@ -71,7 +71,7 @@ body {
     position: fixed;
     z-index: 1;
     top: 0;
-    background-color: #0a192fee;
+    background-color: var(--navy);
     transition: top 0.3s;
 }
 
@@ -245,6 +245,7 @@ mark {
 #myself>div>p {
     line-height: 1.3;
     font-family: var(--font-sans);
+
 }
 
 #myImage {
