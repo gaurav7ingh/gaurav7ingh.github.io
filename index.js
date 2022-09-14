@@ -18,10 +18,30 @@ let TransitionEvent = () => {
     workOn.style.opacity = 1;
 }
 let workOn = document.getElementById("aboutSection");
-workOn.addEventListener("pointerover", ()=>{
+workOn.addEventListener("pointerover", () => {
     document.getElementById("aboutSection").style.opacity = 1;
 })
 let scrolledOn = () => {
     let workOn = document.getElementById("aboutSection");
     workOn.style.opacity = 1;
 }
+
+
+
+let removeAttr = () => {
+    if (checkBox.checked) {
+        checkBox.checked = false;
+    }
+};
+
+
+let checkBox = document.getElementById("checkBox");
+
+let about = document.querySelector("#about");
+let work = document.querySelector("#work").addEventListener('click', removeAttr);
+let contact = document.querySelector("#contact").addEventListener('click', removeAttr);
+let resume = document.querySelector("#resumeIn").addEventListener('click', removeAttr);;
+
+
+about.addEventListener("click", removeAttr);
+

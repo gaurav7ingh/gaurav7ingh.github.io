@@ -494,4 +494,8 @@ mark {
         left: 55px;
     }
 
+    .project-image {
+        width: 100%;
+    }
+
 }
