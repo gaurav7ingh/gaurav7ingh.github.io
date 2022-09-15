@@ -96,11 +96,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
+    background: none;
 }
 
 #logo>a>img {
     width: 70px;
     height: 70px;
+    background:none;
 }
 
 #selectSection {
@@ -565,6 +568,35 @@ hr {
 
 @media screen and (max-width:800px) {
 
+    .project-content1,
+    .project-content {
+        background-image: url(./source/github.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.12) 5px 5px 6px 0px inset, rgba(0, 0, 0, 0.32) -5px -5px 6px 1px inset;
+        /* box-shadow:  0px 2px 4px 0px,  0px 2px 16px 0px; */
+        height: 430px;
+        z-index: 3;
+    }
+
+    .imgMatginAuto {
+        display: block;
+        margin: auto;
+    }
+
+    .project-image * {
+        opacity: 0;
+    }
+
+    .project-image>a>img {
+        height: auto;
+    }
+
+    .leftAlineImage {
+        margin-left: 0px;
+    }
 
     #left,
     #right {
@@ -666,7 +698,7 @@ hr {
     }
 
     #project {
-        display: block;
+        margin: auto;
 
     }
 
