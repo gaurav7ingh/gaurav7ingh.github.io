@@ -40,8 +40,10 @@ let checkBox = document.getElementById("checkBox");
 let about = document.querySelector("#about");
 let work = document.querySelector("#work").addEventListener('click', removeAttr);
 let contact = document.querySelector("#contact").addEventListener('click', removeAttr);
-let resume = document.querySelector("#resumeIn").addEventListener('click', removeAttr);;
-
+let resume = document.querySelector("#resumeIn").addEventListener('click', removeAttr);
+let skill = document.querySelector("#skill").addEventListener('click', removeAttr);
 
 about.addEventListener("click", removeAttr);
 
+
+new GitHubCalendar(".calendar", "gaurav7ingh");

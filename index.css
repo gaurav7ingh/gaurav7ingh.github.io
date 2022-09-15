@@ -1,29 +1,20 @@
 :root {
     --dark-navy: #020c1b;
     --navy: #1A374D;
-    --light-navy: #316B83;
-    --lightest-navy: #233554;
-    --navy-shadow: rgba(2, 12, 27, 0.7);
+    --light-navy: #064663;
+    --lightest-navy: #256D85;
+    --navy-shadow: #1a374dcc;
     --dark-slate: #495670;
     --light-slate: #a8b2d1;
     --lightest-slate: #ccd6f6;
     --white: #e6f1ff;
-    --yellow: #f8c900;
+    --yellow: #FEDB39;
     --light-yellow: #f8cb009b;
     --yellow-tint: #f8cb0025;
-    --pink: #f57dff;
-    --blue: #57cbff;
     --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    --nav-height: 100px;
-    --nav-scroll-height: 70px;
     --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    --hamburger-width: 30px;
-    --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
-    --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
-    --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    --ham-after-active: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
 }
 
 .font {
@@ -41,10 +32,31 @@
 
 * {
     background-color: var(--navy);
-    color: rgb(249, 242, 226);
+    color: rgb(255, 255, 255);
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-slate);
+    border: 3px solid var(--navy);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--navy);
+}
+
+::selection {
+    background-color: var(--lightest-navy);
+    color: var(--lightest-slate);
 }
 
 body {
@@ -58,25 +70,27 @@ body {
 
 }
 
-
-#nav>* {
-    background-color: var(--navy);
-}
-
 #nav {
+    padding-top: 10px;
     display: flex;
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    padding-right: 70px;
     justify-content: space-between;
     position: fixed;
     z-index: 1;
     top: 0;
-    background-color: var(--navy);
+    background-color: var(--navy-shadow);
     transition: top 0.3s;
+    box-shadow: 0 0 30px -15px var(--dark-navy);
+}
+
+#nav,
+#nav * {
+    background-color: var(--navy-shadow);
 }
 
 #logo {
-    padding-top: 13px;
+    margin-left: 10px;
     height: 5em;
     width: 10em;
     display: flex;
@@ -86,7 +100,7 @@ body {
 
 #logo>a>img {
     width: 70px;
-    height: 80px;
+    height: 70px;
 }
 
 #selectSection {
@@ -95,11 +109,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    background: none;
 }
 
-#selectSection>* {
+#selectSection * {
     font-family: var(--font-mono);
+    background: none;
 }
 
 #selectSectionForHam {
@@ -187,6 +202,7 @@ a {
     margin: auto;
     position: relative;
     padding-top: 100px;
+    overflow: hidden;
 }
 
 #introduction {
@@ -206,16 +222,49 @@ a {
 
 mark {
     color: var(--yellow);
+    font-family: var(--font-mono);
+    font-weight: normal;
 }
 
 #aboutSection {
     margin-top: 150px;
-    border: 1px solid wheat;
-    opacity: 0;
-    transition: 1s;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
 
+#masaiStudies>img {
+    width: 100%;
+    border-radius: 3px;
+}
 
+#mainContainerForSkill {
+    border: 1px solid #DDDDDD;
+    background-image: url(./source/java.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 650px;
+    border-radius: 3px;
+}
+
+#mainContainerForSkill * {
+    background: none;
+    padding-bottom: 15px;
+
+}
+
+.skillS {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: var(--font-sans);
+}
+
+.skillS>div>img {
+    width: 100%;
+    padding: 50px;
+}
 
 #btn1 {
     margin-top: 20px;
@@ -283,6 +332,12 @@ mark {
     width: 50%;
     position: absolute;
     right: 0;
+    margin-top: 100px;
+    background: transparent;
+}
+
+.project-content * {
+    background: transparent;
 }
 
 .project-overline {
@@ -304,7 +359,7 @@ mark {
 }
 
 .project-description {
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    box-shadow: 0 10px 30px -15px var(--dark-navy);
     padding: 25px;
     border-radius: var(--border-radius);
     background-color: var(--light-navy);
@@ -338,6 +393,31 @@ mark {
 
 .git {
     right: 35;
+    height: 25;
+    width: 25;
+}
+
+
+.left .project-overline,
+.left .project-description,
+.left .project-title,
+.left .project-tech-list,
+.left {
+    text-align: left;
+    left: 0;
+}
+
+.left .project-tech-list {
+    padding-left: 0;
+    padding-right: 100px;
+}
+
+.left .fixLinkForImage {
+    left: 0;
+}
+
+.left .goto {
+    left: 38px;
 }
 
 
@@ -345,30 +425,146 @@ mark {
 
 
 
+#contactMeSection {
+    font-family: var(--font-sans);
+    margin: 0;
+    box-sizing: border-box;
+
+}
 
 
 
+#fixFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 22px;
+}
+
+.block {
+    display: inline;
+    margin-left: -5px;
+}
+
+.headding {
+    margin: 40px 0;
+    text-align: left;
+    font-family: var(--font-sans);
+}
+
+.edu {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.decorate {
+    font-family: var(--font-sans);
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+._contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+._contact>div {
+    justify-content: center;
+}
+
+._contact i,
+._contact img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+}
 
 
+._contact a h3 {
+    text-align: center;
+}
+
+#educationInMasai {
+    display: flex;
+    width: 750px;
+    font-family: Helvetica, arial;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    min-height: 243px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contrib-number {
+    color: #6cc644;
+}
+
+#educationInMasai>div {
+    width: 33%;
+    border: 1px solid black;
+}
+
+.icons>p {
+    font-size: 15px;
+}
+
+hr {
+    margin: 16px 0px;
+}
 
 
+.calendar {
+    width: 100%;
+    overflow: hidden;
+    z-index: 0.1;
+    padding: 10px;
+    padding-left: 2px;
+    box-shadow: rgba(6, 33, 60, 0.2) 0px 8px 24px;
+}
 
+.project-image>img {
+    width: 500px;
+    height: 438px;
+}
 
-
-
-
-
-
-
-
+.leftAlineImage {
+    margin-left: 50%;
+}
 
 @media screen and (max-width:1080px) {
     #left {
         left: 15px;
     }
+
+    .contrib-column {
+        position: relative;
+        top: 120px;
+        border: none;
+    }
+
+    .float-right {
+        position: relative;
+        top: 128px;
+        z-index: 1;
+    }
+
+    .calendar .js-calendar-graph-svg {
+        position: absolute;
+        right: 5px;
+    }
+
+    .calendar {
+        border: none;
+        box-shadow: rgba(6, 33, 60, 0.2) 0px 8px 24px;
+    }
+
 }
 
+
+
 @media screen and (max-width:800px) {
+
 
     #left,
     #right {
@@ -429,8 +625,8 @@ mark {
 
     #closeHam {
         position: fixed;
-        right: 40px;
-        top: 35px;
+        right: 30px;
+        top: 25px;
     }
 
     #checkBox:checked+#selectSectionForHam {
@@ -447,6 +643,19 @@ mark {
         width: 100%;
     }
 
+    #resumeIn {
+        color: var(--yellow);
+        border: 1px solid var(--yellow);
+        padding: 11px 15px;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    #resumeIn:hover {
+        background-color: var(--yellow-tint);
+        cursor: pointer;
+    }
+
     .project-overline {
         text-align: left;
     }
@@ -458,6 +667,7 @@ mark {
 
     #project {
         display: block;
+
     }
 
     .project-content {
@@ -495,8 +705,42 @@ mark {
         left: 55px;
     }
 
+    .left .git {
+        left: 25;
+    }
+
+    .left .goto {
+        left: 55px;
+    }
+
     .project-image {
         width: 0%;
+    }
+
+
+
+
+    .block {
+        display: block;
+        margin-left: auto;
+    }
+
+    .hideit {
+        display: none;
+    }
+
+    /* .skillS>div>img{
+        padding: 20px;
+    } */
+
+    .float-right {
+        position: relative;
+        top: 128px;
+        z-index: 1;
+    }
+
+    .calendar {
+        border: none;
     }
 
 }

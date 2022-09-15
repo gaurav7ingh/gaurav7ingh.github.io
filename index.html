@@ -5,31 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaurav Singh</title>
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
     <link rel="stylesheet" href="./index.css">
+
 </head>
 
 <body onload="TransitionEvent()">
 
+    <!-- this is navbar -->
     <div id="nav">
         <div id="logo">
             <a href="#main"><img src="./source/logo_for_portfolio.png"></a>
         </div>
+
+        <!-- this is the list of items is present in the pages -->
         <div id="selectSection">
             <div><a href="#aboutSection">About</a></div>
+            <div><a href="#skillSection">Skill</a></div>
             <div><a href="#workSection">Work</a></div>
             <div><a href="#contactMeSection">Contact</a></div>
             <a href="#resumeSection"><button id="resume">Resume</button></a>
         </div>
         <img id="ham" src="./source/ham.png">
     </div>
-    <input type="checkbox" id="checkBox" >
+
+
+    <!-- this is for ham to come in and go out  -->
+    <input type="checkbox" id="checkBox">
+
+
+    <!-- this is for the ham while we are using in the smaller screen -->
     <div id="selectSectionForHam">
-        <img id="closeHam" src="./source/ham.png">
+        <img id="closeHam" src="./source/closeHam.png">
         <div id="about"><a href="#aboutSection">About</a></div>
+        <div id="skill"><a href="#skillSection">Skill</a></div>
         <div id="work"><a href="#workSection">Work</a></div>
         <div id="contact"><a href="#contactMeSection">Contact</a></div>
         <a href="#resumeSection"><button id="resumeIn">Resume</button></a>
     </div>
+
+
+    <!-- this is for left floting social media -->
     <div id="left">
         <ul class="ulForContact">
             <li>
@@ -54,20 +71,29 @@
             </li>
         </ul>
     </div>
+
+
+    <!-- this is for right floating gmail  -->
     <div id="right">
         <ul class="ulForContact">
             <li>
                 <div style="width: 1px; border: 1px solid white; height: 7em;background-color: white;"></div>
             </li>
-            <li id="downward"><a href="mailto:gauravsingh@gmail.com"> gauravsing99626@gmail.com</a></li>
+            <li id="downward"><a href="mailto:gauravsingh@gmail.com"> gauravsingh99626@gmail.com</a></li>
         </ul>
     </div>
+
+    <!-- this is main container for the all the item to take inside a area -->
     <div id="main">
+
+
+        <!-- this is introduction  -->
         <div id="introduction">
             <h3 style="font-family: var(--font-mono);color: var(--yellow);margin-bottom: 18px;">Hi,</h3>
             <h1 style="font-family: var(--font-sans);font-size: clamp(40px, 8vw, 80px);">I'm Gaurav,
             </h1>
-            <h1 style="font-family: var(--font-sans);font-size: clamp(40px, 8vw, 80px);color: var(--lightest-slate);">Web
+            <h1 style="font-family: var(--font-sans);font-size: clamp(40px, 8vw, 80px);color: var(--lightest-slate);">
+                Web
                 Developer.</h1>
             <div>
                 <p class="smallIntro">I am a web developer from Devbhoomi, Uttarakhand. I enjoy building everything from
@@ -77,8 +103,11 @@
             <a href="mailto:gauravsingh99626@gmail.com"><button id="btn1">Contact Me</button></a>
         </div>
 
+
+
+        <!-- this is about section  -->
         <div id="aboutSection">
-            <h1 class="headding">About Me</h1>
+            <h1 class="headding"><mark>01. </mark>About Me</h1>
             <hr>
             <div id="myself">
                 <div>
@@ -113,10 +142,62 @@
                     <img src="./source/myImage.jpg">
                 </div>
             </div>
-
+            <hr>
+            <h3 class="edu" style="font-family: var(--font-mono);">My Accomplishments</h3>
+            <hr>
+            <div id="masaiStudies">
+                <img src="./source/masaiStudy.png">
+            </div>
         </div>
+
+
+        <!-- this is skill section  -->
+        <div id="skillSection">
+            <h1 class="headding"><mark>02. </mark>Skills</h1>
+            <div id="mainContainerForSkill">
+                <h3 class="edu" style="font-family: var(--font-mono);">My Skills</h3>
+                <hr style="padding: 0 20px;">
+                <div class="skillS">
+                    <div><img src="./source/html.png">
+                        <h4><mark>01.</mark>HTML</h4>
+                    </div>
+                    <div><img src="./source/css.png">
+                        <h4><mark>02.</mark>CSS</h4>
+                    </div>
+                    <div><img src="./source/git.png">
+                        <h4><mark>03.</mark>GIT HUB</h4>
+                    </div>
+                    <div><img src="./source/js.png">
+                        <h4><mark>04.</mark>JAVA SCRIPT</h4>
+                    </div>
+                </div>
+                <div class="skillS">
+                    <div><img src="./source/mysql.png">
+                        <h4><mark>05.</mark>MYSql</h4>
+                    </div>
+                    <div><img src="./source/backend.png">
+                        <h4><mark>06.</mark>BACK-END</h4>
+                    </div>
+                    <div><img src="./source/frontend.png">
+                        <h4><mark>07.</mark>FRONT-END</h4>
+                    </div>
+                    <div><img src="./source/dsa.png">
+                        <h4><mark>08.</mark>DATA STRUCTURES</h4>
+                    </div>
+                </div>
+
+            </div>
+            <h3 class="edu" style="font-family: var(--font-mono);">GitHub contribution calendar</h3>
+            <div class="calendar">
+                Loading the data just for you.
+            </div>
+        </div>
+
+
+        <!-- this is work section  -->
         <div id="workSection">
-            <h1 class="headding">Thing's that I've build </h1>
+            <h1 class="headding"><mark>03. </mark>Thing's I've build </h1>
+            <hr>
             <div id="project">
                 <div class="project-content">
                     <div>
@@ -144,8 +225,39 @@
                             </a></div>
                     </div>
                 </div>
-                <div class="project-image"><a href="https://gaurav7ingh.github.io/Anthropologie/" target="_blank">
-                        <img style="z-index: 1;" width="500px" height="438" src="./source/Antropologie.jpg">
+                <div class="project-image"><a href="https://gaurav7ingh.github.io/Anthropologie/" target="_blank" ">
+                        <img style=" z-index: 1;" src="./source/github.png">
+                    </a>
+                </div>
+                <div class="project-content left">
+                    <div>
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title"><a href="https://gaurav7ingh.github.io/Anthropologie/"
+                                target="_blank">Anthropologie || Clone</a></h3>
+                        <div class="project-description">
+                            <p>A website which has a lot of functionality on it. I've tried to copy the same website as
+                                in
+                                the early days of my learning. this was a great experience working on an E-Commerce
+                                website
+                                for the first time. </p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Log in</li>
+                            <li>Search</li>
+                            <li>Sorting</li>
+                            <li>payment</li>
+                        </ul>
+                        <div class="project-links"><a href="https://github.com/gaurav7ingh/Anthropologie"
+                                target="_blank">
+                                <img class="git fixLinkForImage" src="./source/github.png">
+                            </a><a target="_blank" href="https://gaurav7ingh.github.io/Anthropologie/">
+                                <img class="goto fixLinkForImage" src="./source/goto.png">
+                            </a></div>
+                    </div>
+                </div>
+                <div class="project-image leftAlineImage"><a href="https://gaurav7ingh.github.io/Anthropologie/"
+                        target="_blank">
+                        <img style="z-index: 1;" src="./source/github.png">
                     </a>
                 </div>
                 <div class="project-content">
@@ -175,44 +287,71 @@
                     </div>
                 </div>
                 <div class="project-image"><a href="https://gaurav7ingh.github.io/Anthropologie/" target="_blank">
-                        <img style="z-index: 1;" width="500px" height="438" src="./source/Antropologie.jpg">
-                    </a>
-                </div>
-                <div class="project-content">
-                    <div>
-                        <p class="project-overline">Featured Project</p>
-                        <h3 class="project-title"><a href="https://gaurav7ingh.github.io/Anthropologie/"
-                                target="_blank">Anthropologie || Clone</a></h3>
-                        <div class="project-description">
-                            <p>A website which has a lot of functionality on it. I've tried to copy the same website as
-                                in
-                                the early days of my learning. this was a great experience working on an E-Commerce
-                                website
-                                for the first time. </p>
-                        </div>
-                        <ul class="project-tech-list">
-                            <li>Log in</li>
-                            <li>Search</li>
-                            <li>Sorting</li>
-                            <li>payment</li>
-                        </ul>
-                        <div class="project-links"><a href="https://github.com/gaurav7ingh/Anthropologie"
-                                target="_blank">
-                                <img class="git fixLinkForImage" src="./source/github.png">
-                            </a><a target="_blank" href="https://gaurav7ingh.github.io/Anthropologie/">
-                                <img class="goto fixLinkForImage" src="./source/goto.png">
-                            </a></div>
-                    </div>
-                </div>
-                <div class="project-image"><a href="https://gaurav7ingh.github.io/Anthropologie/" target="_blank">
-                        <img style="z-index: 1;" width="500px" height="438" src="./source/Antropologie.jpg">
+                        <img style="z-index: 1;" src="./source/github.png">
                     </a>
                 </div>
             </div>
 
         </div>
+
+
+        <!-- this is contact section  -->
+        <div id="contactMeSection">
+            <h1 class="headding"><mark>04. </mark>Get In Touch</h1>
+            <hr>
+
+            <div class="_contact">
+
+                <a href="mailto:gauravsingh99626@gmail.com" target="_blank" class="icons">
+                    <img src="./source/mail.png">
+                    <h3>My Email</h3>
+                    <p class="block">gauravsingh99626</p>
+                    <p class="block" style="text-align: center;">@gmail.com</p>
+                </a>
+
+                <a href="tel:+91 9368644155" target="_blank" class="icons">
+                    <img src="./source/phone.png">
+                    <h3>My Number</h3>
+                    <p>+91 9368644155</p>
+                </a>
+
+                <a href="" target="_blank" class="hideit icons">
+                    <img src="./source/address.png">
+                    <h3>Address</h3>
+                    <p>U.S.Nagar, Uttarakhand, India</p>
+                </a>
+            </div>
+            <div class="_contact">
+
+                <a target="_blank" href="https://www.linkedin.com/in/gaurav-singh0/" class="icons">
+                    <img src="./source/linkedin.png"></img>
+                    <h3>Linked In</h3>
+                </a>
+
+                <a href="https://github.com/gaurav7ingh/Anthropologie" target="_blank" class="icons">
+                    <img src="./source/github.png">
+                    <h3>Git Hub</h3>
+                </a>
+            </div>
+
+            <hr>
+        </div>
     </div>
+
+
+
+
+    <!-- this is foooter for the page  -->
+    <footer style="margin-bottom:20px">
+        <div id="fixFooter">
+            <p style="font-family: var(--font-mono);">Build by <mark class="decorate">*Gaurav Singh*</mark></p>
+            <p style="font-family: var(--font-mono);font-size: 17px;">Thank You</p>
+        </div>
+    </footer>
 </body>
+<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+</script>
+
 <script src="./index.js"></script>
 
 </html>
