@@ -469,6 +469,7 @@ mark {
 ._contact {
     display: flex;
     justify-content: space-evenly;
+    margin: 40px;
 }
 
 ._contact>div {
@@ -567,6 +568,9 @@ hr {
 
 
 @media screen and (max-width:800px) {
+    ._contact{
+        margin: auto;
+    }
 
     .project-content1,
     .project-content {
@@ -761,9 +765,9 @@ hr {
         display: none;
     }
 
-    /* .skillS>div>img{
-        padding: 20px;
-    } */
+    .skillS>div>img{
+        padding: 10px;
+    }
 
     .float-right {
         position: relative;
