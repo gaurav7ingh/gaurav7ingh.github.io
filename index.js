@@ -51,7 +51,7 @@ new GitHubCalendar(".calendar", "gaurav7ingh");
 
 
 
-let arr = ["Contact Me", "Email", "Linked In"]
+let arr = ["Contact Me", "Email", "Linked In", "Instagram"]
 
 setInterval(() => {
     let text = document.getElementById("btn1").innerText;
@@ -64,20 +64,30 @@ setInterval(() => {
         case "Email": document.getElementById("btn1").innerText = arr[2];
 
             break;
-        case "Linked In": text = document.getElementById("btn1").innerText = arr[0];
+
+        case "Instagram": document.getElementById("btn1").innerText = arr[0];
+
+            break;
+        case "Linked In": text = document.getElementById("btn1").innerText = arr[3];
 
             break;
         default:
             break;
     }
-}, 2000)
+}, 3000)
 
 
 let btn = document.getElementById("btn1");
 
-btn.addEventListener("click",()=>{
+btn.addEventListener("click", () => {
     let res = btn.innerText;
-    if(res == "Contact Me"){
-        location.g
+    if (res == "Contact Me" || res == "Email") {
+        location.href = "mailto:gauravsingh99626@gmail.com";
+    }
+    else if (res == "Linked In") {
+        location.href = "https://www.linkedin.com/in/gaurav-singh0/";
+    }
+    else if (res == "Instagram") {
+        location.href = "https://www.instagram.com/gaurav_7ingh/";
     }
 })
