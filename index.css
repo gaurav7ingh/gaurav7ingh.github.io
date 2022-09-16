@@ -103,11 +103,11 @@ body {
 #logo>a>img {
     width: 70px;
     height: 70px;
-    background:none;
+    background: none;
 }
 
 #selectSection {
-    width: 27em;
+    width: 32em;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
@@ -335,8 +335,8 @@ mark {
     width: 50%;
     position: absolute;
     right: 0;
-    margin-top: 100px;
     background: transparent;
+    margin-top: 100px;
 }
 
 .project-content * {
@@ -375,6 +375,8 @@ mark {
 
 .project-description>p {
     background-color: var(--light-navy);
+    opacity: 1;
+    visibility: visible;
 }
 
 .project-tech-list {
@@ -450,7 +452,7 @@ mark {
 }
 
 .headding {
-    margin: 40px 0;
+    margin: 160px 0 20px 0;
     text-align: left;
     font-family: var(--font-sans);
 }
@@ -515,6 +517,7 @@ mark {
 
 hr {
     margin: 16px 0px;
+
 }
 
 
@@ -527,13 +530,23 @@ hr {
     box-shadow: rgba(6, 33, 60, 0.2) 0px 8px 24px;
 }
 
-.project-image>img {
-    width: 500px;
-    height: 438px;
-}
 
 .leftAlineImage {
-    margin-left: 50%;
+    margin-left: 40%;
+}
+
+.fixImageSizeForTheProject {
+    width: 565px;
+    display: block;
+    position: static;
+    padding-top: 100px;
+    opacity: 0.8;
+    background-image: url(./source/anthropologie.png);
+    background-size: 565px;
+    background-blend-mode: multiply;
+}
+.fixImageSizeForTheProject:hover{
+    opacity: 1;
 }
 
 @media screen and (max-width:1080px) {
@@ -568,7 +581,7 @@ hr {
 
 
 @media screen and (max-width:800px) {
-    ._contact{
+    ._contact {
         margin: auto;
     }
 
@@ -765,7 +778,7 @@ hr {
         display: none;
     }
 
-    .skillS>div>img{
+    .skillS>div>img {
         padding: 10px;
     }
 
