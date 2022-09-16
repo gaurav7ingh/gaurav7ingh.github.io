@@ -47,3 +47,37 @@ about.addEventListener("click", removeAttr);
 
 
 new GitHubCalendar(".calendar", "gaurav7ingh");
+
+
+
+
+let arr = ["Contact Me", "Email", "Linked In"]
+
+setInterval(() => {
+    let text = document.getElementById("btn1").innerText;
+    switch (text) {
+
+        case "Contact Me": document.getElementById("btn1").innerText = arr[1];
+
+            break;
+
+        case "Email": document.getElementById("btn1").innerText = arr[2];
+
+            break;
+        case "Linked In": text = document.getElementById("btn1").innerText = arr[0];
+
+            break;
+        default:
+            break;
+    }
+}, 2000)
+
+
+let btn = document.getElementById("btn1");
+
+btn.addEventListener("click",()=>{
+    let res = btn.innerText;
+    if(res == "Contact Me"){
+        location.g
+    }
+})

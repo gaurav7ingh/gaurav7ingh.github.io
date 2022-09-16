@@ -302,18 +302,22 @@ mark {
 
 #myImage {
     width: 50%;
-
 }
+
 
 #myImage>img {
-    width: 80%;
+    position: sticky;
+    width: 300px;
+    height: 300px;
     display: block;
     margin: auto;
+    border-radius: 5px;
+    transition: var(--transition);
 }
 
-
-
-
+#myImage>img:hover {
+    margin: auto;
+}
 
 
 
@@ -545,9 +549,24 @@ hr {
     background-size: 565px;
     background-blend-mode: multiply;
 }
-.fixImageSizeForTheProject:hover{
+
+.fixImageSizeForTheProject:hover {
     opacity: 1;
 }
+
+#techStack {
+    display: flex;
+    margin-top: 40px;
+    font-family: var(--font-mono);
+}
+
+ul {
+    list-style-image: url(./source/arrow.png);
+    margin-left: 20px;
+    margin-right: 40px;
+    line-height: 25px;
+}
+
 
 @media screen and (max-width:1080px) {
     #left {
