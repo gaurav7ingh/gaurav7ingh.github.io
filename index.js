@@ -74,7 +74,7 @@ setInterval(() => {
         default:
             break;
     }
-}, 3000)
+}, 2000)
 
 
 let btn = document.getElementById("btn1");

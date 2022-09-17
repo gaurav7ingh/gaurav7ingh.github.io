@@ -59,10 +59,6 @@
     color: var(--lightest-slate);
 }
 
-body {
-    opacity: 0;
-    transition: 0.1s;
-}
 
 #checkBox,
 #ham {
@@ -280,6 +276,7 @@ mark {
     border-radius: 4px;
     font-size: 20px;
     font-family: var(--font-mono);
+    transition: var(--transition);
 }
 
 #btn1:hover {
@@ -338,7 +335,9 @@ mark {
 
 
 
-.project-content {}
+.project-content {
+    width: 60%;
+}
 
 .project-content * {
     background: transparent;
@@ -370,14 +369,13 @@ mark {
     color: var(--light-slate);
     font-size: var(--fz-lg);
     font-family: var(--font-sans);
-    text-align: right;
     z-index: 2;
+    /* width: 60%;
+    margin-left: 40%; */
 }
 
 .project-description>p {
     background-color: var(--light-navy);
-    opacity: 1;
-    visibility: visible;
 }
 
 .project-tech-list {
@@ -385,7 +383,7 @@ mark {
     flex-wrap: wrap;
     margin: 25px 0px 10px;
     list-style: none;
-    width: 100%;
+    width: 80%;
     justify-content: space-between;
     padding-left: 150px;
 }
@@ -413,17 +411,28 @@ mark {
     left: 0;
 }
 
+.right {
+    margin-left: 40%;
+}
+
+
 .left .project-tech-list {
     padding-left: 0;
     padding-right: 100px;
 }
 
-.left .fixLinkForImage {
-    left: 0;
+.project-links {
+    height: 30px;
 }
 
-.left .goto {
-    left: 38px;
+.right .fixLinkForImage {
+    position: absolute;
+    right: 0;
+}
+
+.right .goto {
+    position: absolute;
+    right: 38px;
 }
 
 
@@ -543,11 +552,7 @@ hr {
 .fixImageSizeForTheProject {
     width: 565px;
     display: block;
-    position: static;
     opacity: 0.9;
-    background-image: url(./source/anthropologie.png);
-    background-size: 565px;
-    background-blend-mode: multiply;
 }
 
 .fixImageSizeForTheProject:hover {
@@ -599,6 +604,16 @@ ul {
         box-shadow: rgba(6, 33, 60, 0.2) 0px 8px 24px;
     }
 
+    .left .project-tech-list {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .right .project-tech-list {
+        width: 100%;
+        padding-left: 0;
+    }
+
 }
 
 
@@ -618,10 +633,6 @@ ul {
         background-size: cover;
         margin: auto;
         padding: 10px;
-        box-shadow: rgba(0, 0, 0, 0.12) 5px 5px 6px 0px inset, rgba(0, 0, 0, 0.32) -5px -5px 6px 1px inset;
-        /* box-shadow:  0px 2px 4px 0px,  0px 2px 16px 0px; */
-
-
     }
 
     .imgMatginAuto {
@@ -761,17 +772,24 @@ ul {
     .project-description {
         text-align: left;
         background: none;
-        box-shadow: none;
         padding: 0;
+        width: 80%;
+        margin-left: 0;
     }
 
     .project-description>p {
-        background: none;
+        padding: 20px 15px;
     }
 
-    .project-tech-list {
+
+    .left .project-tech-list {
+        width: 80%;
+        padding-right: 0;
+    }
+
+    .right .project-tech-list {
+        width: 80%;
         padding-left: 0;
-        padding-right: 100px;
     }
 
     .fixLinkForImage {
@@ -827,4 +845,19 @@ ul {
     .project-content {
         padding-top: 0;
     }
+
+    .left .project-tech-list {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .right .project-tech-list {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .project-description {
+        width: 100%;
+    }
+
 }
