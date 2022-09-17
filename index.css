@@ -61,7 +61,7 @@
 
 body {
     opacity: 0;
-    transition: 2s;
+    transition: 0.1s;
 }
 
 #checkBox,
@@ -337,14 +337,8 @@ mark {
 
 
 
-.project-content1,
-.project-content {
-    width: 50%;
-    position: absolute;
-    right: 0;
-    background: transparent;
-    margin-top: 100px;
-}
+
+.project-content {}
 
 .project-content * {
     background: transparent;
@@ -399,7 +393,7 @@ mark {
 .fixLinkForImage {
     width: 30px;
     height: 30px;
-    position: absolute;
+    position: static;
     right: 0;
 }
 
@@ -542,11 +536,14 @@ hr {
     margin-left: 40%;
 }
 
+.project-image {
+    margin-top: 50px;
+}
+
 .fixImageSizeForTheProject {
     width: 565px;
     display: block;
     position: static;
-    padding-top: 100px;
     opacity: 0.9;
     background-image: url(./source/anthropologie.png);
     background-size: 565px;
@@ -575,12 +572,9 @@ ul {
     .fixImageSizeForTheProject {
         opacity: 1;
     }
+
     #left {
         left: 15px;
-    }
-    .project-title{
-        background-color: var(--navy);
-        display: inline;
     }
 
     .contrib-column {
@@ -613,7 +607,8 @@ ul {
     ._contact {
         margin: auto;
     }
-    .project-title{
+
+    .project-title {
         background: none;
     }
 
@@ -625,7 +620,7 @@ ul {
         padding: 10px;
         box-shadow: rgba(0, 0, 0, 0.12) 5px 5px 6px 0px inset, rgba(0, 0, 0, 0.32) -5px -5px 6px 1px inset;
         /* box-shadow:  0px 2px 4px 0px,  0px 2px 16px 0px; */
-        height: 430px;
+
 
     }
 
@@ -635,7 +630,7 @@ ul {
     }
 
     .project-image * {
-        opacity: 0;
+        opacity: 1;
     }
 
     .project-image>a>img {
@@ -759,13 +754,8 @@ ul {
         text-align: left;
         left: 0;
         width: 100%;
-        padding: 20px;
-        padding-top: 160px;
-        margin-top: 70px;
-    }
-
-    .project-image {
-        opacity: 0.2;
+        padding: 10px;
+        z-index: 1;
     }
 
     .project-description {
@@ -830,25 +820,11 @@ ul {
         border: none;
     }
 
-    #back1 {
-        background-image: url(./source/aback.png);
-        margin-top: 40px;
-    }
-
-    #back2 {
-        background-image: url(./source/bback.png);
-        margin-top: 90px;
-    }
-
-    #back3 {
-        background-image: url(./source/aback.png);
-        margin-top: 140px;
-    }
 }
 
 
 @media screen and (max-width:480px) {
-    .project-content{
+    .project-content {
         padding-top: 0;
     }
 }
