@@ -383,7 +383,7 @@ mark {
     flex-wrap: wrap;
     margin: 25px 0px 10px;
     list-style: none;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
     padding-left: 150px;
 }
