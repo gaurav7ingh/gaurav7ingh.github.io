@@ -462,7 +462,7 @@ mark {
 }
 
 .headding {
-    margin: 160px 0 20px 0;
+    margin: 120px 0 20px 0;
     text-align: left;
     font-family: var(--font-sans);
 }
@@ -619,6 +619,15 @@ ul {
 
 
 @media screen and (max-width:800px) {
+
+    h1{
+        font-size: x-large;
+    }
+    
+    #main p{
+        font-size: medium;
+    }
+
     ._contact {
         margin: auto;
     }
@@ -758,7 +767,7 @@ ul {
     }
 
     #contactMeSection {
-        margin-top: 250px;
+        margin-top: 150px;
     }
 
     .project-content {
@@ -767,6 +776,8 @@ ul {
         width: 100%;
         padding: 10px;
         z-index: 1;
+        background-color: var(--light-navy);
+        box-shadow: 0 10px 30px -15px var(--dark-navy);
     }
 
     .project-description {
@@ -775,6 +786,7 @@ ul {
         padding: 0;
         width: 80%;
         margin-left: 0;
+        box-shadow: none;
     }
 
     .project-description>p {
