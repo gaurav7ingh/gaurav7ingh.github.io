@@ -1,16 +1,17 @@
 :root {
     --dark-navy: #020c1b;
-    --navy: #1A374D;
+    --navy: #0a192f;
     --light-navy: #064663;
     --lightest-navy: #256D85;
     --navy-shadow: #1a374dcc;
     --dark-slate: #495670;
+    --slate: #8892b0;
     --light-slate: #a8b2d1;
     --lightest-slate: #ccd6f6;
     --white: #e6f1ff;
-    --yellow: #FEDB39;
-    --light-yellow: #f8cb009b;
-    --yellow-tint: #f8cb0025;
+    --cyan: cyan;
+    --light-yellow: rgba(0, 255, 255, 0.689);
+    --cyan-tint: #f8cb0025;
     --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -23,7 +24,7 @@
 
 
 .color {
-    color: var(--lightest-slate);
+    color: var(--slate);
 }
 
 .size {
@@ -32,7 +33,7 @@
 
 * {
     background-color: var(--navy);
-    color: rgb(255, 255, 255);
+    color: var(--lightest-slate);
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -75,14 +76,14 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    background-color: var(--navy-shadow);
+    background-color: rgba(10, 25, 47, 0.85);
     transition: top 0.3s;
     box-shadow: 0 0 30px -15px var(--dark-navy);
 }
 
 #nav,
 #nav * {
-    background-color: var(--navy-shadow);
+    background-color: rgba(10, 25, 47, 0.85);
 }
 
 #logo {
@@ -123,7 +124,7 @@
 }
 
 #selectSection>div>a:hover {
-    color: var(--yellow);
+    color: var(--cyan);
 }
 
 a {
@@ -132,15 +133,15 @@ a {
 }
 
 #resume {
-    color: var(--yellow);
-    border: 1px solid var(--yellow);
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
     padding: 11px 15px;
     border-radius: 4px;
     font-size: 16px;
 }
 
 #resume:hover {
-    background-color: var(--yellow-tint);
+    background-color: var(--cyan-tint);
     cursor: pointer;
 }
 
@@ -194,7 +195,7 @@ a {
 
 #downward:hover,
 #downward>a:hover {
-    color: var(--yellow);
+    color: var(--cyan);
     cursor: pointer;
     top: 8;
 }
@@ -203,7 +204,7 @@ a {
     width: 75%;
     margin: auto;
     position: relative;
-    padding-top: 100px;
+    padding-top: 150px;
     overflow: hidden;
 }
 
@@ -223,7 +224,7 @@ a {
 }
 
 mark {
-    color: var(--yellow);
+    color: var(--cyan);
     font-family: var(--font-mono);
     font-weight: normal;
 }
@@ -239,6 +240,11 @@ mark {
 #masaiStudies>img {
     width: 100%;
     border-radius: 3px;
+    opacity: 0.8;
+}
+
+#masaiStudies>img:hover {
+    opacity: 1;
 }
 
 #mainContainerForSkill {
@@ -270,8 +276,8 @@ mark {
 
 #btn1 {
     margin-top: 20px;
-    color: var(--yellow);
-    border: 1px solid var(--yellow);
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
     padding: 12px 30px;
     border-radius: 4px;
     font-size: 20px;
@@ -280,7 +286,7 @@ mark {
 }
 
 #btn1:hover {
-    background-color: var(--yellow-tint);
+    background-color: var(--cyan-tint);
     cursor: pointer;
 }
 
@@ -338,6 +344,7 @@ mark {
 .project-content {
     width: 66%;
 }
+
 
 .project-content * {
     background: transparent;
@@ -464,6 +471,7 @@ mark {
 .headding {
     margin: 120px 0 20px 0;
     text-align: left;
+    color: var(--lightest-slate);
     font-family: var(--font-sans);
 }
 
@@ -620,11 +628,11 @@ ul {
 
 @media screen and (max-width:800px) {
 
-    h1{
+    h1 {
         font-size: x-large;
     }
-    
-    #main p{
+
+    #main p {
         font-size: medium;
     }
 
@@ -740,15 +748,15 @@ ul {
     }
 
     #resumeIn {
-        color: var(--yellow);
-        border: 1px solid var(--yellow);
+        color: var(--cyan);
+        border: 1px solid var(--cyan);
         padding: 11px 15px;
         border-radius: 4px;
         font-size: 16px;
     }
 
     #resumeIn:hover {
-        background-color: var(--yellow-tint);
+        background-color: var(--cyan-tint);
         cursor: pointer;
     }
 
@@ -872,4 +880,8 @@ ul {
         width: 100%;
     }
 
+}
+
+.hide {
+    display: none;
 }
