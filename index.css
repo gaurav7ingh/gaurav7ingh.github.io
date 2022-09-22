@@ -353,7 +353,7 @@ mark {
 }
 
 .project-overline {
-    margin: 10px 0px;
+    padding: 10px 0px;
     color: var(--green);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
@@ -800,7 +800,7 @@ ul {
     }
 
     .project-description>p {
-        padding: 20px 15px;
+        padding: 5px;
     }
 
 
