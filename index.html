@@ -9,7 +9,7 @@
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
     <link rel="stylesheet" href="./index.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body onload="TransitionEvent()">
@@ -91,7 +91,7 @@
 
 
         <!-- this is introduction  -->
-        <div id="introduction">
+        <div id="introduction" data-aos="fade-in">
             <h3 style="font-family: var(--font-mono);color: var(--cyan);margin-bottom: 18px;">Hi,</h3>
             <h1 style="font-family: var(--font-sans);font-size: clamp(40px, 8vw, 80px);">I'm Gaurav,
             </h1>
@@ -110,10 +110,10 @@
 
 
         <!-- this is about section  -->
-        <div id="aboutSection">
+        <div id="aboutSection" data-aos="fade-in">
             <h1 class="headding">About Me</h1>
             <hr>
-            <div id="myself">
+            <div id="myself" data-aos="fade-in">
                 <div>
                     <p class="font color size">
                         Hello! my name is Gaurav Singh.
@@ -142,7 +142,7 @@
                         <mark>Tech Stack</mark>
                     </h4>
                     <p class="font color size" style="display: inline;">are</p>
-                    <div id="techStack">
+                    <div id="techStack" data-aos="fade-in">
                         <ul>
                             <li>Java</li>
                             <li>JavaScript</li>
@@ -158,7 +158,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="myImage">
+                <div id="myImage" data-aos="fade-in">
 
                     <img src="./source/myImage.png">
                 </div>
@@ -173,13 +173,13 @@
 
 
         <!-- this is skill section  -->
-        <div id="skillSection">
+        <div id="skillSection" data-aos="fade-in">
             <h1 class="headding">Skills</h1>
             <div id="mainContainerForSkill">
                 <h3 class="edu" style="font-family: var(--font-mono);">My Skills</h3>
                 <hr style="padding: 0 20px;">
 
-                <div class="skillS">
+                <div class="skillS" data-aos="fade-in">
                     <div><img src="./source/java1.png">
                         <h4>JAVA</h4>
                     </div>
@@ -193,7 +193,7 @@
                         <h4>DSA</h4>
                     </div>
                 </div>
-                <div class="skillS">
+                <div class="skillS" data-aos="fade-in">
                     <div><img src="./source/mysql.png">
                         <h4>MySQL</h4>
                     </div>
@@ -207,7 +207,7 @@
                         <h4>POST MAN</h4>
                     </div>
                 </div>
-                <div class="skillS">
+                <div class="skillS" data-aos="fade-in">
                     <div><img src="./source/js.png">
                         <h4>JAVA SCRIPT</h4>
                     </div>
@@ -222,24 +222,24 @@
                     </div>
                 </div>
             </div>
-            <h3 class="edu" style="font-family: var(--font-mono);">GitHub contribution calendar</h3>
-            <div class="calendar">
+            <h3 class="edu" style="font-family: var(--font-mono);" data-aos="fade-in">GitHub contribution calendar</h3>
+            <div class="calendar" data-aos="fade-in">
                 Loading the data just for you.
             </div>
         </div>
 
 
         <!-- this is work section  -->
-        <div id="workSection">
+        <div id="workSection" data-aos="fade-in">
             <h1 class="headding">Thing's I've build </h1>
             <hr>
-            <div id="project">
+            <div id="project" data-aos="fade-in">
                 <div class="fix_flex">
                     <div class="project-image"><a href="https://gaurav7ingh.github.io/Anthropologie/" target="_blank" ">
                     <img class=" fixImageSizeForTheProject" style=" z-index: 1;" src="./source/anthropologie.png">
                         </a>
                     </div>
-                    <div class="project-content right">
+                    <div class="project-content right" data-aos="fade-in">
                         <div>
                             <p class="project-overline">Featured Project</p>
                             <h3 class="project-title"><a href="https://gaurav7ingh.github.io/Anthropologie/"
@@ -268,13 +268,13 @@
                     </div>
                 </div>
                 <hr>
-                <div class="fix_flex">
+                <div class="fix_flex" data-aos="fade-in">
                     <div class="project-image leftAlineImage"><a href="https://frolicking-elf-dd1919.netlify.app/"
                             target="_blank">
                             <img class="fixImageSizeForTheProject" style="z-index: 1;" src="./source/booking.png">
                         </a>
                     </div>
-                    <div class="project-content left">
+                    <div class="project-content left" data-aos="fade-in">
                         <div>
                             <p class="project-overline">Featured Project</p>
                             <h3 class="project-title"><a href="https://frolicking-elf-dd1919.netlify.app/"
@@ -303,13 +303,13 @@
                     </div>
                 </div>
                 <hr>
-                <div class="fix_flex">
+                <div class="fix_flex" data-aos="fade-in">
                     <div class="project-image hide"><a href="https://gaurav7ingh.github.io/Anthropologie/"
                             target="_blank">
                             <img class="fixImageSizeForTheProject" style="z-index: 1;" src="./source/anthropologie.png">
                         </a>
                     </div>
-                    <div class="project-content left hide">
+                    <div class="project-content left hide" data-aos="fade-in">
                         <div>
                             <p class="project-overline">Featured Project</p>
                             <h3 class="project-title"><a href="https://gaurav7ingh.github.io/Anthropologie/"
@@ -343,7 +343,7 @@
 
 
         <!-- this is contact section  -->
-        <div id="contactMeSection">
+        <div id="contactMeSection" data-aos="fade-in">
             <h1 class="headding">Get In Touch</h1>
             <hr>
 
@@ -396,6 +396,13 @@
             <p style="font-family: var(--font-mono);font-size: 17px;">Thank You</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1000,
+        });
+    </script>
 </body>
 <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
 </script>
