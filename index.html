@@ -338,66 +338,103 @@
 
 
         <!-- this is contact section  -->
-        <div id="contactMeSection" data-aos="fade-in">
+        <div class="contact" data-aos="fade-in">
             <h1 class="headding">Get In Touch</h1>
             <hr>
+            <div class="max-width">
+                <h2 class="font" style="font-size: 22px; color: var(--cyan); font-family: var(--font-sans);">Let's
+                    Connect</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="icons">
+                            <a href="mailto:gauravsingh99626@gmail.com">
+                                <div class="row">
+                                    <img src="source/mail.png">
+                                    <div class="info">
+                                        <div class="head"></div>
+                                        <div class="sub-title">
+                                            gauravsingh99626@gmail.com </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gaurav-singh0/" target="_blank">
+                                <div class="row">
+                                    <img src="source/linkedin.png">
+                                    <div class="info">
+                                        <div class="sub-title"> Linkedin </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://github.com/gaurav7ingh" target="_blank">
+                                <div class="row">
 
-            <div class="_contact">
+                                    <img src="source/github.png">
 
-                <a href="mailto:gauravsingh99626@gmail.com" target="_blank" class="icons">
-                    <img src="./source/mail.png">
-                    <h3>My Email</h3>
-                    <p class="block">gauravsingh99626</p>
-                    <p class="block" style="text-align: center;">@gmail.com</p>
-                </a>
+                                    <div class="info">
+                                        <!-- <div class="head">Email</div> -->
+                                        <div class="sub-title">GitHub </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="+91 9368644155">
+                                <div class="row">
+                                    <img src="source/phone.png">
+                                    <div class="info">
+                                        <!-- <div class="head">Email</div> -->
+                                        <div class="sub-title"> +91 9368644155</div>
+                                    </div>
+                                </div>
+                            </a>
 
-                <a href="tel:+91 9368644155" target="_blank" class="icons">
-                    <img src="./source/phone.png">
-                    <h3>My Number</h3>
-                    <p>+91 9368644155</p>
-                </a>
 
-                <a href="https://www.google.com/maps/place/Melaghat+Main+Market/@28.8529883,80.0547325,17z/data=!4m12!1m6!4m5!1m0!1m3!2m2!1d80.0538313!2d28.8524386!3m4!1s0x39a04d82e9b3f6ed:0x738d80c19d8fa179!8m2!3d28.8521376!4d80.0546647"
-                    target="_blank" class="hideit icons">
-                    <img src="./source/address.png">
-                    <h3>Address</h3>
-                    <p>U.S.Nagar, Uttarakhand, India</p>
-                </a>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text" style="font-family: var(--font-sans); font-size: 22px;">Message me</div>
+                        <form id="my_form" action="https://formsubmit.co/gauravsingh99626@gmail.com" method="POST"
+                            target="_blank">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" name="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email" name="Email" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" name="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" name="Message" placeholder="Message.."
+                                    required></textarea>
+                            </div>
+                            <div class="button-area">
+                                <button type="submit" onclick="submitForm()">Send message</button>
+                                <!--                               <input type="button" value="Send message" id="btnsubmit" onclick="submitForm()"> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="_contact">
+        </div>
 
-                <a target="_blank" href="https://www.linkedin.com/in/gaurav-singh0/" class="icons">
-                    <img src="./source/linkedin.png"></img>
-                    <h3>Linked In</h3>
-                </a>
 
-                <a href="https://github.com/gaurav7ingh/Anthropologie" target="_blank" class="icons">
-                    <img src="./source/github.png">
-                    <h3>Git Hub</h3>
-                </a>
+
+        <!-- this is foooter for the page  -->
+        <hr>
+        <footer style="margin-bottom:20px">
+            <div id="fixFooter">
+                <p style="font-family: var(--font-mono);">Build by <mark class="decorate">*Gaurav Singh*</mark></p>
+                <p style="font-family: var(--font-mono);font-size: 17px;">Thank You</p>
             </div>
-
-            <hr>
-        </div>
-    </div>
-
-
-
-
-    <!-- this is foooter for the page  -->
-    <footer style="margin-bottom:20px">
-        <div id="fixFooter">
-            <p style="font-family: var(--font-mono);">Build by <mark class="decorate">*Gaurav Singh*</mark></p>
-            <p style="font-family: var(--font-mono);font-size: 17px;">Thank You</p>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 150,
-            duration: 1000,
-        });
-    </script>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 150,
+                duration: 1000,
+            });
+        </script>
 </body>
 <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
 </script>
