@@ -990,6 +990,10 @@ ul {
     .field .email {
         width: 98%;
     }
+
+    .row {
+        font-size: 16px;
+    }
 }
 
 
