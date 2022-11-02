@@ -21,7 +21,10 @@
 
 
 .font {
-    font: var(--font-sans);
+    font-family: var(--font-sans);
+    font-size: 22px;
+    color: var(--cyan);
+    font-weight: 400;
 }
 
 
@@ -58,7 +61,7 @@
 }
 
 ::selection {
-    background-color: var(--lightest-navy);
+    background-color: rgba(62, 169, 169, 0.801);
     color: var(--lightest-slate);
 }
 
@@ -265,14 +268,18 @@ mark {
     justify-content: center;
     margin: auto;
     width: 130px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    margin-top: 20px;
 }
 
 .individualStat>div:nth-child(1):hover {
     background-color: var(--cyan-tint);
     border: 1px solid var(--cyan);
-    zoom: 101%;
     position: relative;
     cursor: pointer;
+    top: -4;
 }
 
 .individualStat {
@@ -306,12 +313,10 @@ mark {
 } */
 
 #mainContainerForSkill {
-    border: 1px solid #DDDDDD;
     background-image: url(./source/java.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 650px;
-    border-radius: 3px;
 }
 
 #mainContainerForSkill * {
@@ -330,6 +335,18 @@ mark {
 .skillS>div>img {
     width: 100%;
     padding: 50px;
+}
+
+.skillS>div {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+#mainContainerForSkill .skillS>div:hover {
+    background-color: var(--cyan-tint);
+    border-radius: 5px;
+    top: -6;
 }
 
 #btn1 {
@@ -356,6 +373,14 @@ mark {
 .fix_flex {
     display: flex;
     gap: 15px;
+    margin-top: 20px;
+    padding: 12px;
+}
+
+.fix_flex:hover{
+    border: 1px solid var(--dark-slate);
+    border-radius: 3px;
+    padding: 8px;
 }
 
 #myself>div {
@@ -372,7 +397,6 @@ mark {
 #myImage {
     width: 50%;
 }
-
 
 #myImage>img {
     position: sticky;
@@ -454,57 +478,37 @@ mark {
     margin: 25px 0px 10px;
     list-style: none;
     width: 100%;
-    justify-content: space-between;
-    padding-left: 150px;
+    justify-content: space-around;
+    padding-left: 50%;
+}
+
+.project-tech-list li>img {
+    width: 35px;
 }
 
 .fixLinkForImage {
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 0;
+    right: 10;
 }
 
 .git {
-    right: 35;
+    right: 45;
     height: 25;
     width: 25;
 }
 
 
-.left .project-overline,
-.left .project-description,
-.left .project-title,
-.left .project-tech-list,
-.left {
-    text-align: left;
-    left: 0;
-}
-
-.right {
-    margin-left: 34%;
-}
 
 
-.left .project-tech-list {
-    padding-left: 0;
-    padding-right: 100px;
-}
 
 .project-links {
     margin-top: 15px;
     height: 30px;
 }
 
-.right .fixLinkForImage {
-    position: absolute;
-    right: 0;
-}
 
-.right .goto {
-    position: absolute;
-    right: 38px;
-}
 
 
 
@@ -557,9 +561,7 @@ mark {
     margin: 0 auto;
 }
 
-.contrib-number {
-    color: #6cc644;
-}
+
 
 #educationInMasai>div {
     width: 33%;
@@ -586,9 +588,18 @@ hr {
     margin-bottom: 30px;
 }
 
+
+rect.ContributionCalendar-day[data-level='0'] {
+    fill: var(--light-slate);
+}
+
+.contrib-number {
+    color: #6cc644;
+}
+
 .git_stats {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
 }
 
@@ -830,18 +841,19 @@ rect {
         height: auto;
     }
 
-    .stats{
+    .stats {
         margin-left: auto;
     }
 
-    .project-title{
+    .project-title {
         font-size: 22px;
     }
 
-    .project-description{
-        width:100%
+    .project-description {
+        width: 100%
     }
-    .project-content{
+
+    .project-content {
         width: 100%;
     }
 }
@@ -1027,7 +1039,7 @@ rect {
         padding: 5px;
     }
 
-    
+
 
     .fixLinkForImage {
         left: 20px;
@@ -1115,7 +1127,7 @@ rect {
     }
 
     .project-tech-list {
-        width: 100%;
+        width: 80%;
         padding-left: 10px;
     }
 

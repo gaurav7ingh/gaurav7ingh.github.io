@@ -92,7 +92,7 @@ btn.addEventListener("click", () => {
 
 function submitForm() {
 
-    var frm = document.getElementById('my_form');
+    let frm = document.getElementById('my_form');
     frm.submit(); // Submit the form
     frm.reset();  // Reset all form data
     return false; // Prevent page refresh
