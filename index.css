@@ -239,7 +239,63 @@ mark {
     transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
 
-#masaiStudies>img {
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 12%;
+}
+
+.individualStat {
+    font-family: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
+    text-align: center;
+    width: 140px;
+}
+
+.individualStat>div:first-child {
+    align-items: center;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    height: 130px;
+    justify-content: center;
+    margin: auto;
+    width: 130px;
+}
+
+.individualStat>div:nth-child(1):hover {
+    background-color: var(--cyan-tint);
+    border: 1px solid var(--cyan);
+    zoom: 101%;
+    position: relative;
+    cursor: pointer;
+}
+
+.individualStat {
+    font-family: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
+    text-align: center;
+    width: 140px;
+}
+
+.individualStat h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.individualStat>div+div {
+    font-size: 1.17em;
+}
+
+/* #masaiStudies>img {
     width: 100%;
     border-radius: 3px;
     opacity: 0.8;
@@ -247,7 +303,7 @@ mark {
 
 #masaiStudies>img:hover {
     opacity: 1;
-}
+} */
 
 #mainContainerForSkill {
     border: 1px solid #DDDDDD;
@@ -297,6 +353,11 @@ mark {
     justify-content: space-between;
 }
 
+.fix_flex {
+    display: flex;
+    gap: 15px;
+}
+
 #myself>div {
     width: 50%;
 
@@ -344,7 +405,7 @@ mark {
 
 
 .project-content {
-    width: 66%;
+    width: 83%;
 }
 
 
@@ -400,7 +461,7 @@ mark {
 .fixLinkForImage {
     width: 30px;
     height: 30px;
-    position: static;
+    position: absolute;
     right: 0;
 }
 
@@ -431,6 +492,7 @@ mark {
 }
 
 .project-links {
+    margin-top: 15px;
     height: 30px;
 }
 
@@ -521,19 +583,36 @@ hr {
     padding: 10px;
     padding-left: 2px;
     box-shadow: rgba(6, 33, 60, 0.2) 0px 8px 24px;
+    margin-bottom: 30px;
 }
 
+.git_stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.img {
+    height: 194px;
+}
+
+.git_stats img {
+    width: 100%;
+}
 
 .leftAlineImage {
     margin-left: 40%;
 }
 
 .project-image {
-    margin-top: 50px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .fixImageSizeForTheProject {
-    width: 565px;
+    width: 100%;
     display: block;
     opacity: 0.9;
 }
@@ -644,10 +723,14 @@ ul {
 }
 
 .row:hover {
-    border: 1px solid var(--cyan);
     color: var(--cyan);
     border-radius: 40px;
     background-color: var(--cyan-tint);
+}
+
+rect {
+    width: 13px;
+    height: 13px;
 }
 
 .row:hover * {
@@ -738,21 +821,45 @@ ul {
         box-shadow: rgba(6, 33, 60, 0.2) 0px 8px 24px;
     }
 
-    .left .project-tech-list {
-        width: 100%;
-        padding-right: 0;
+    .project-tech-list {
+        width: 80%;
+        padding-left: 10px;
     }
 
-    .right .project-tech-list {
-        width: 100%;
-        padding-left: 0;
+    .img {
+        height: auto;
     }
 
+    .stats{
+        margin-left: auto;
+    }
+
+    .project-title{
+        font-size: 22px;
+    }
+
+    .project-description{
+        width:100%
+    }
+    .project-content{
+        width: 100%;
+    }
 }
 
 
 
 @media screen and (max-width:800px) {
+
+    .fixImageSizeForTheProject {
+        width: 568px;
+    }
+
+    .git_stats {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
 
     h1 {
         font-size: x-large;
@@ -903,7 +1010,6 @@ ul {
         left: 0;
         width: 100%;
         padding: 10px;
-        z-index: 1;
         background-color: var(--light-navy);
         box-shadow: 0 10px 30px -15px var(--dark-navy);
     }
@@ -921,16 +1027,7 @@ ul {
         padding: 5px;
     }
 
-
-    .left .project-tech-list {
-        width: 80%;
-        padding-right: 0;
-    }
-
-    .right .project-tech-list {
-        width: 80%;
-        padding-left: 0;
-    }
+    
 
     .fixLinkForImage {
         left: 20px;
@@ -952,7 +1049,11 @@ ul {
         width: 0%;
     }
 
-
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 5%;
+    }
 
 
     .block {
@@ -994,6 +1095,11 @@ ul {
     .row {
         font-size: 16px;
     }
+
+    .fix_flex {
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 
@@ -1002,14 +1108,15 @@ ul {
         padding-top: 0;
     }
 
-    .left .project-tech-list {
-        width: 100%;
-        padding-right: 0;
+    .stats {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-left: 25%;
     }
 
-    .right .project-tech-list {
+    .project-tech-list {
         width: 100%;
-        padding-left: 0;
+        padding-left: 10px;
     }
 
     .project-description {

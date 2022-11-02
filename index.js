@@ -51,7 +51,7 @@ new GitHubCalendar(".calendar", "gaurav7ingh");
 
 
 
-let arr = ["Contact Me", "Email", "Linked In", "Instagram"]
+let arr = ["Contact Me", "Email", "Linked In"]
 
 setInterval(() => {
     let text = document.getElementById("btn1").innerText;
@@ -65,10 +65,7 @@ setInterval(() => {
 
             break;
 
-        case "Instagram": document.getElementById("btn1").innerText = arr[0];
-
-            break;
-        case "Linked In": text = document.getElementById("btn1").innerText = arr[3];
+        case "Linked In": text = document.getElementById("btn1").innerText = arr[0];
 
             break;
         default:
