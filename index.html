@@ -1,492 +1,493 @@
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gaurav Singh</title>
+        <link rel="icon" href="./source/logo_for_portfolio.png" />
+        <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+        <link rel="stylesheet" href="./index.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gaurav Singh</title>
-    <link rel="icon" href="./source/logo_for_portfolio.png" />
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-
-<body onload="TransitionEvent()">
-    <!-- this is navbar -->
-    <div id="nav">
-        <div id="logo">
-            <a href="#main"><img src="./source/logo_for_portfolio.png" /></a>
-        </div>
-
-        <!-- this is the list of items is present in the pages -->
-        <div id="selectSection">
-            <div><a href="#aboutSection">About</a></div>
-            <div><a href="#skillSection">Skill</a></div>
-            <div><a href="#workSection">Work</a></div>
-            <div><a href="#contactMeSection">Contact</a></div>
-            <a href="./source/Gaurav_Singh_Resume.pdf" download="Gaurav_Singh_Resume"><button
-                    id="resume">Resume</button></a>
-        </div>
-        <img id="ham" src="./source/ham.png" />
-    </div>
-
-    <!-- this is for ham to come in and go out  -->
-    <input type="checkbox" id="checkBox" />
-
-    <!-- this is for the ham while we are using in the smaller screen -->
-    <div id="selectSectionForHam">
-        <img id="closeHam" src="./source/closeHam.png" />
-        <div id="about"><a href="#aboutSection">About</a></div>
-        <div id="skill"><a href="#skillSection">Skill</a></div>
-        <div id="work"><a href="#workSection">Work</a></div>
-        <div id="contact"><a href="#contactMeSection">Contact</a></div>
-        <a href="./source/Gaurav_Singh_Resume.pdf" download="Gaurav_Singh_Resume"><button
-                id="resumeIn">Resume</button></a>
-    </div>
-
-    <!-- this is for left floting social media -->
-    <div id="left">
-        <ul class="ulForContact">
-            <li>
-                <a target="_blank" href="https://github.com/gaurav7ingh"><img class="linksForContact"
-                        src="./source/github.png" /></a>
-            </li>
-            <li>
-                <a target="_blank" href="https://www.linkedin.com/in/gaurav-singh0/"><img class="linksForContact"
-                        src="./source/linkedin.png" /></a>
-            </li>
-            <li>
-                <a target="_blank" href="https://twitter.com/gaurav__singh">
-                    <img class="linksForContact" src="./source/twitter.png" />
-                </a>
-            </li>
-            <li>
-                <a target="_blank" href="https://instagram.com/gaurav_7ingh">
-                    <img class="linksForContact" src="./source/insta.png" />
-                </a>
-            </li>
-            <li>
-                <div style="width: 1px; border: 1px solid white; height: 10em; background-color: white;"></div>
-            </li>
-        </ul>
-    </div>
-
-    <!-- this is for right floating gmail  -->
-    <div id="right">
-        <ul class="ulForContact">
-            <li>
-                <div style="width: 1px; border: 1px solid white; height: 7em; background-color: white;"></div>
-            </li>
-            <li id="downward"><a href="mailto:gauravsingh@gmail.com"> gauravsingh99626@gmail.com</a></li>
-        </ul>
-    </div>
-
-    <!-- this is main container for the all the item to take inside a area -->
-    <div id="main">
-        <!-- this is introduction  -->
-        <div id="introduction">
-            <h3 style="font-family: var(--font-mono); color: var(--cyan); margin-bottom: 18px;">Hi,</h3>
-            <h1 style="font-family: var(--font-sans); font-size: clamp(40px, 8vw, 80px);">I'm Gaurav,</h1>
-            <h1 style="font-family: var(--font-sans); font-size: clamp(40px, 8vw, 80px); color: var(--slate);">
-                Web Developer.
-            </h1>
-            <div>
-                <p class="smallIntro">
-                    Trained, Self-motivated and Hardworking web developer, With a diverse range of skills including
-                    Java, SpringBoot, MySQL, HTML, CSS and JavaScript. <br>
-                    #I believe that Every accomplishment starts with the decision to try.
-                </p>
+    <body onload="TransitionEvent()">
+        <!-- this is navbar -->
+        <div id="nav">
+            <div id="logo">
+                <a href="#main"><img src="./source/logo_for_portfolio.png" /></a>
             </div>
-            <button id="btn1">Contact Me</button>
+
+            <!-- this is the list of items is present in the pages -->
+            <div id="selectSection">
+                <div><a href="#aboutSection">About</a></div>
+                <div><a href="#skillSection">Skill</a></div>
+                <div><a href="#workSection">Work</a></div>
+                <div><a href="#contactMeSection">Contact</a></div>
+                <a href="./source/Gaurav_Singh_Resume.pdf" download="Gaurav_Singh_Resume"><button id="resume">Resume</button></a>
+            </div>
+            <img id="ham" src="./source/ham.png" />
         </div>
 
-        <!-- this is about section  -->
-        <div id="aboutSection">
-            <h1 class="headding">About Me</h1>
-            <hr />
-            <div id="myself">
+        <!-- this is for ham to come in and go out  -->
+        <input type="checkbox" id="checkBox" />
+
+        <!-- this is for the ham while we are using in the smaller screen -->
+        <div id="selectSectionForHam">
+            <img id="closeHam" src="./source/closeHam.png" />
+            <div id="about"><a href="#aboutSection">About</a></div>
+            <div id="skill"><a href="#skillSection">Skill</a></div>
+            <div id="work"><a href="#workSection">Work</a></div>
+            <div id="contact"><a href="#contactMeSection">Contact</a></div>
+            <a href="./source/Gaurav_Singh_Resume.pdf" download="Gaurav_Singh_Resume"><button id="resumeIn">Resume</button></a>
+        </div>
+
+        <!-- this is for left floting social media -->
+        <div id="left">
+            <ul class="ulForContact">
+                <li>
+                    <a target="_blank" href="https://github.com/gaurav7ingh"><img class="linksForContact" src="./source/github.png" /></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/gaurav-singh0/"><img class="linksForContact" src="./source/linkedin.png" /></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com/gaurav__singh">
+                        <img class="linksForContact" src="./source/twitter.png" />
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://instagram.com/gaurav_7ingh">
+                        <img class="linksForContact" src="./source/insta.png" />
+                    </a>
+                </li>
+                <li>
+                    <div style="width: 1px; border: 1px solid white; height: 10em; background-color: white;"></div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- this is for right floating gmail  -->
+        <div id="right">
+            <ul class="ulForContact">
+                <li>
+                    <div style="width: 1px; border: 1px solid white; height: 7em; background-color: white;"></div>
+                </li>
+                <li id="downward"><a href="mailto:gauravsingh@gmail.com"> gauravsingh99626@gmail.com</a></li>
+            </ul>
+        </div>
+
+        <!-- this is main container for the all the item to take inside a area -->
+        <div id="main">
+            <!-- this is introduction  -->
+            <div id="introduction">
+                <h3 style="font-family: var(--font-mono); color: var(--cyan); margin-bottom: 18px;">Hi,</h3>
+                <h1 style="font-family: var(--font-sans); font-size: clamp(40px, 8vw, 80px);">I'm Gaurav,</h1>
+                <h1 style="font-family: var(--font-sans); font-size: clamp(40px, 8vw, 80px); color: var(--slate);">
+                    Web Developer.
+                </h1>
                 <div>
-                    <p class="font color size">
-                        Hello! my name is Gaurav Singh.
+                    <p class="smallIntro">
+                        Trained, Self-motivated and Hardworking web developer, With a diverse range of skills including Java, SpringBoot, MySQL, HTML, CSS and JavaScript. <br />
+                        #I believe that Every accomplishment starts with the decision to try.
                     </p>
-                    <p class="font color size">
-                        I am a web developer with in-depth knowledge in Java. In a nutshell, I can create websites that
-                        may help organizations address
-                        <mark> business challenges</mark> and <mark>meet their needs.</mark>
-                    </p>
-                    <br />
-                    <p class="font color size">
-                        I am a lifelong learner ( currently trying to learn Python! ), love running, and want to visit
-                        new places.
-                    </p>
-                    <br />
-                    <p class="font color size">
-                        Fast-forward to today, and I've had the privilege of working on some of the front-end and
-                        back-end projects. My main focus these days is to achieve expertise in Java.
-                    </p>
-                    <br />
-                    <p class="font color size" style="display: inline;">
-                        My expertise lies within web apps, and the main languages in my
-                    </p>
-                    <h4 class="edu"
-                        style="font-size: x-large; text-align: left; font-family: var(--font-mono); display: inline;">
-                        <mark>Tech Stack</mark>
-                    </h4>
-                    <p class="font color size" style="display: inline;">are</p>
-                    <div id="techStack">
-                        <ul>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>MYSQL</li>
-                        </ul>
-                        <ul>
-                            <li>HIBERNATE</li>
-                            <li>GitHub</li>
-                            <li>Spring Boot</li>
-                            <li>STS</li>
-                        </ul>
-                    </div>
                 </div>
-                <div id="myImage">
-                    <img src="./source/myImage.png" />
-                </div>
+                <button id="btn1">Contact Me</button>
             </div>
-            <hr />
 
-        </div>
-
-        <!-- this is skill section  -->
-        <div id="skillSection">
-            <h1 class="headding">Skills</h1>
-            <hr>
-            <div id="mainContainerForSkill">
-                <h3 class="edu" style="font-family: var(--font-mono);">Technology that I know</h3>
-                <hr style="padding: 0 0px;" />
-                <div class="skillS" data-aos="fade-in">
+            <!-- this is about section  -->
+            <div id="aboutSection">
+                <h1 class="headding">About Me</h1>
+                <hr />
+                <div id="myself">
                     <div>
-                        <img src="./source/java1.png" />
-                        <h4>JAVA</h4>
+                        <p class="font color size">
+                            Hello! my name is Gaurav Singh.
+                        </p>
+                        <p class="font color size">
+                            I am a web developer with in-depth knowledge in Java. In a nutshell, I can create websites that may help organizations address
+                            <mark> business challenges</mark> and <mark>meet their needs.</mark>
+                        </p>
+                        <br />
+                        <p class="font color size">
+                            I am a lifelong learner ( currently trying to learn Python! ), love running, and want to visit new places.
+                        </p>
+                        <br />
+                        <p class="font color size">
+                            Fast-forward to today, and I've had the privilege of working on some of the front-end and back-end projects. My main focus these days is to achieve expertise in Java.
+                        </p>
+                        <br />
+                        <p class="font color size" style="display: inline;">
+                            My expertise lies within web apps, and the main languages in my
+                        </p>
+                        <h4 class="edu" style="font-size: x-large; text-align: left; font-family: var(--font-mono); display: inline;">
+                            <mark>Tech Stack</mark>
+                        </h4>
+                        <p class="font color size" style="display: inline;">are</p>
+                        <div id="techStack">
+                            <ul>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>MYSQL</li>
+                            </ul>
+                            <ul>
+                                <li>HIBERNATE</li>
+                                <li>GitHub</li>
+                                <li>Spring Boot</li>
+                                <li>STS</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <img src="./source/spring.png" />
-                        <h4>SPRING BOOT</h4>
-                    </div>
-                    <div>
-                        <img src="./source/mysql.png" />
-                        <h4>MySQL</h4>
-                    </div>
-                    <div>
-                        <img src="./source/hiber.png" />
-                        <h4>HIBER-NATE</h4>
+                    <div id="myImage">
+                        <img src="./source/myImage.png" />
                     </div>
                 </div>
-                <div class="skillS" data-aos="fade-in">
-                    <div>
-                        <img src="./source/postman.png" />
-                        <h4>POST MAN</h4>
-                    </div>
-                    <div>
-                        <img src="./source/js.png" />
-                        <h4>JAVA SCRIPT</h4>
-                    </div>
-                    <div>
-                        <img src="./source/css.png" />
-                        <h4>CSS</h4>
-                    </div>
-                    <div>
-                        <img src="./source/html.png" />
-                        <h4>HTML</h4>
-                    </div>
-                </div>
-                <div class="skillS" data-aos="fade-in">
-                    <div>
-                        <img src="./source/backend.png" />
-                        <h4>BACK-END</h4>
-                    </div>
-                    <div>
-                        <img src="./source/dsa.png" />
-                        <h4>DSA</h4>
-                    </div>
-                    <div>
-                        <img src="./source/git.png" />
-                        <h4>GIT HUB</h4>
-                    </div>
-                    <div>
-                        <img src="./source/frontend.png" />
-                        <h4>FRONT-END</h4>
-                        
-                    </div>
-                    
-
-                </div>
+                <hr />
             </div>
-            <h1 class="headding" data-aos="fade-in">Statistics</h1>
-            <hr />
-            <h3 class="edu" style="font-family: var(--font-mono);" data-aos="fade-in">Trained In</h3>
-            <hr>
-            <!-- <div id="masaiStudies">
+
+            <!-- this is skill section  -->
+            <div id="skillSection">
+                <h1 class="headding">Skills</h1>
+                <hr />
+                <div id="mainContainerForSkill">
+                    <h3 class="edu" style="font-family: var(--font-mono);">Technology that I know</h3>
+                    <hr style="padding: 0 0px;" />
+                    <div class="skillS" data-aos="fade-in">
+                        <div>
+                            <img src="./source/java1.png" />
+                            <h6>Java</h6>
+                        </div>
+                        <div>
+                            <img src="./source/spring.png" />
+                            <h6>Spring Boot</h6>
+                        </div>
+                        <div>
+                            <img src="./source/mysql.png" />
+                            <h6>MySQL</h6>
+                        </div>
+                        <div>
+                            <img src="./source/hiber.png" />
+                            <h6>Hibernate</h6>
+                        </div>
+                    </div>
+                    <div class="skillS" data-aos="fade-in">
+                        <div>
+                            <img src="./source/postman.png" />
+                            <h6>Postman</h6>
+                        </div>
+                        <div>
+                            <img src="./source/js.png" />
+                            <h6>JavaScript</h6>
+                        </div>
+                        <div>
+                            <img src="./source/css.png" />
+                            <h6>CSS</h6>
+                        </div>
+                        <div>
+                            <img src="./source/html.png" />
+                            <h6>HTML</h6>
+                        </div>
+                    </div>
+                    <div class="skillS" data-aos="fade-in">
+                        <div>
+                            <img src="./source/backend.png" />
+                            <h6>Back-End</h6>
+                        </div>
+                        <div>
+                            <img src="./source/dsa.png" />
+                            <h6>DSA</h6>
+                        </div>
+                        <div>
+                            <img src="./source/git.png" />
+                            <h6>GitHub</h6>
+                        </div>
+                        <div>
+                            <img src="./source/frontend.png" />
+                            <h6>Front-End</h6>
+                        </div>
+                    </div>
+                    <hr style="padding: 0;">
+                    <h3 class="edu" style="font-family: var(--font-mono);">Soft Skills</h3>
+                    <hr style="padding: 0 0px;" />
+                    <div class="skillS softS" data-aos="fade-in">
+                        <div>
+                            <img src="./source/leadership.png" />
+                            <h6>Leadership</h6>
+                        </div>
+                        <div>
+                            <img src="./source/time-manager.png" />
+                            <h6>Time Management</h6>
+                        </div>
+                        <div>
+                            <img src="./source/decision.png" />
+                            <h6>Decision Making</h6>
+                        </div>
+                        <div>
+                            <img src="./source/teamwork.png" />
+                            <h6>Collaborative</h6>
+                        </div>
+                        <div>
+                            <img src="./source/idea.png" />
+                            <h6>Problem Solving</h6>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="headding" data-aos="fade-in">Statistics</h1>
+                <hr />
+                <h3 class="edu" style="font-family: var(--font-mono);" data-aos="fade-in">Trained In</h3>
+                <hr />
+                <!-- <div id="masaiStudies">
                     <img src="./source/masaiStudy.png" />
                 </div> -->
-            <div class="stats">
-                <div class="individualStat" data-aos="fade-in">
-                    <div>1200+</div>
-                    <div>
-                        <h3>Hours</h3>of Coding
+                <div class="stats">
+                    <div class="individualStat" data-aos="fade-in">
+                        <div>1200+</div>
+                        <div>
+                            <h3>Hours</h3>
+                            of Coding
+                        </div>
+                    </div>
+                    <div class="individualStat" data-aos="fade-in">
+                        <div>800+</div>
+                        <div>
+                            <h3>DSA</h3>
+                            Problems
+                        </div>
+                    </div>
+                    <div class="individualStat" data-aos="fade-in">
+                        <div>10+</div>
+                        <div>
+                            <h3>Projects</h3>
+                            Done
+                        </div>
+                    </div>
+                    <div class="individualStat" id="hours" data-aos="fade-in">
+                        <div>200+</div>
+                        <div>
+                            <h3>Hours</h3>
+                            of Soft Skills Sessions
+                        </div>
                     </div>
                 </div>
-                <div class="individualStat" data-aos="fade-in">
-                    <div>800+</div>
-                    <div>
-                        <h3>DSA</h3>Problems
-                    </div>
+                <hr />
+                <h3 class="edu" style="font-family: var(--font-mono);" data-aos="fade-in">GitHub Stats</h3>
+                <hr />
+                <div class="calendar" data-aos="fade-in">
+                    Loading the data just for you.
                 </div>
-                <div class="individualStat" data-aos="fade-in">
-                    <div>10+</div>
+                <div class="git_stats">
+                    <div><img src="https://github-readme-stats.vercel.app/api?username=gaurav7ingh&show_icons=true&locale=en&theme=dark" data-aos="fade-in" /></div>
                     <div>
-                        <h3>Projects</h3>Done
-                    </div>
-                </div>
-                <div class="individualStat" id="hours" data-aos="fade-in">
-                    <div>200+</div>
-                    <div>
-                        <h3>Hours</h3> of Soft Skills Sessions
+                        <img
+                            class="img"
+                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=gaurav7ingh&layout=compact&exclude_repo=Lybrate-Website-Clone-Version-2.0,Lybrate-Website-Clone,Adidas-Clone&hide=Shell&border_radius=0&theme=dark"
+                            data-aos="fade-in"
+                        />
                     </div>
                 </div>
             </div>
-            <hr>
-            <h3 class="edu" style="font-family: var(--font-mono);" data-aos="fade-in">GitHub Stats</h3>
-            <hr>
-            <div class="calendar" data-aos="fade-in">
-                Loading the data just for you.
-            </div>
-            <div class="git_stats">
-                <div><img
-                        src="https://github-readme-stats.vercel.app/api?username=gaurav7ingh&show_icons=true&locale=en&theme=dark"
-                        data-aos="fade-in" />
-                </div>
-                <div><img class="img"
-                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=gaurav7ingh&layout=compact&exclude_repo=Lybrate-Website-Clone-Version-2.0,Lybrate-Website-Clone,Adidas-Clone&hide=Shell&border_radius=0&theme=dark"
-                        data-aos="fade-in" />
-                </div>
-            </div>
-        </div>
 
-        <!-- this is work section  -->
-        <div id="workSection" data-aos="fade-in">
-            <h1 class="headding">Thing's I've build</h1>
-            <hr />
-            <h2 class="font">My Project's</h2>
-            <div id="project" data-aos="fade-in">
-                <div class="fix_flex">
-                    <div class="project-image">
-                        <a href="https://gaurav7ingh.github.io/Anthropologie/" target="_blank">
-                            <img class="fixImageSizeForTheProject" style="z-index: 1;"
-                                src="./source/anthropologie.png" />
-                        </a>
-                    </div>
-                    <div class="project-content" data-aos="fade-in">
-                        <div>
-                            <p class="project-overline">Featured Project</p>
-                            <h3 class="project-title"><a href="https://gaurav7ingh.github.io/Anthropologie/"
-                                    target="_blank">Anthropologie || Clone</a></h3>
-                            <div class="project-description">
-                                <p>
-                                    Anthropology is an e-commerce website where users can purchase clothing, jewellery,
-                                    home furniture, decoration products, beauty products and gifts. It's a team project
-                                    completed in 5 days with 5
-                                    members.
-                                </p>
-                            </div>
-                            <ul class="project-tech-list">
-                                <li><img src="source/html.png"></li>
-                                <li><img src="source/css.png"></li>
-                                <li><img src="source/js.png"></li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/gaurav7ingh/Anthropologie" target="_blank">
-                                    <img class="git fixLinkForImage" src="./source/github.png" />
-                                </a>
-                                <a target="_blank" href="https://gaurav7ingh.github.io/Anthropologie/">
-                                    <img class="fixLinkForImage goto" src="./source/goto.png" />
-                                </a>
+            <!-- this is work section  -->
+            <div id="workSection" data-aos="fade-in">
+                <h1 class="headding">Thing's I've build</h1>
+                <hr />
+                <h2 class="font">My Project's</h2>
+                <div id="project" data-aos="fade-in">
+                    <div class="fix_flex">
+                        <div class="project-image">
+                            <a href="https://gaurav7ingh.github.io/Anthropologie/" target="_blank">
+                                <img class="fixImageSizeForTheProject" style="z-index: 1;" src="./source/anthropologie.png" />
+                            </a>
+                        </div>
+                        <div class="project-content" data-aos="fade-in">
+                            <div>
+                                <p class="project-overline">Featured Project</p>
+                                <h3 class="project-title"><a href="https://gaurav7ingh.github.io/Anthropologie/" target="_blank">Anthropologie || Clone</a></h3>
+                                <div class="project-description">
+                                    <p>
+                                        Anthropology is an e-commerce website where users can purchase clothing, jewellery, home furniture, decoration products, beauty products and gifts. It's a team project completed in 5 days with 5
+                                        members.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li><img src="source/html.png" /></li>
+                                    <li><img src="source/css.png" /></li>
+                                    <li><img src="source/js.png" /></li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/gaurav7ingh/Anthropologie" target="_blank">
+                                        <img class="git fixLinkForImage" src="./source/github.png" />
+                                    </a>
+                                    <a target="_blank" href="https://gaurav7ingh.github.io/Anthropologie/">
+                                        <img class="fixLinkForImage goto" src="./source/goto.png" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div class="fix_flex" data-aos="fade-in">
-                    <div class="project-image">
-                        <a href="https://frolicking-elf-dd1919.netlify.app/" target="_blank">
-                            <img class="fixImageSizeForTheProject" style="z-index: 1;" src="./source/booking.png" />
-                        </a>
-                    </div>
-                    <div class="project-content" data-aos="fade-in">
-                        <div>
-                            <p class="project-overline">Featured Project</p>
-                            <h3 class="project-title"><a href="https://frolicking-elf-dd1919.netlify.app/"
-                                    target="_blank">Booking.com || Clone</a></h3>
-                            <div class="project-description">
-                                <p>
-                                    booking.com is a booking website where users can book a room in a hotel. You can
-                                    search a hotel for any location. Here we have used API fetching. It's a
-                                    collaborative project completed in 5 days with
-                                    5 members.
-                                </p>
-                            </div>
-                            <ul class="project-tech-list">
-                                <li><img src="source/html.png"></li>
-                                <li><img src="source/css.png"></li>
-                                <li><img src="source/js.png"></li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/gaurav7ingh/sordid-milk-9344" target="_blank">
-                                    <img class="git fixLinkForImage" src="./source/github.png" />
-                                </a>
-                                <a target="_blank" href="https://frolicking-elf-dd1919.netlify.app/">
-                                    <img class="goto fixLinkForImage" src="./source/goto.png" />
-                                </a>
+                    <hr />
+                    <div class="fix_flex" data-aos="fade-in">
+                        <div class="project-image">
+                            <a href="https://frolicking-elf-dd1919.netlify.app/" target="_blank">
+                                <img class="fixImageSizeForTheProject" style="z-index: 1;" src="./source/booking.png" />
+                            </a>
+                        </div>
+                        <div class="project-content" data-aos="fade-in">
+                            <div>
+                                <p class="project-overline">Featured Project</p>
+                                <h3 class="project-title"><a href="https://frolicking-elf-dd1919.netlify.app/" target="_blank">Booking.com || Clone</a></h3>
+                                <div class="project-description">
+                                    <p>
+                                        booking.com is a booking website where users can book a room in a hotel. You can search a hotel for any location. Here we have used API fetching. It's a collaborative project completed in 5 days with
+                                        5 members.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li><img src="source/html.png" /></li>
+                                    <li><img src="source/css.png" /></li>
+                                    <li><img src="source/js.png" /></li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/gaurav7ingh/sordid-milk-9344" target="_blank">
+                                        <img class="git fixLinkForImage" src="./source/github.png" />
+                                    </a>
+                                    <a target="_blank" href="https://frolicking-elf-dd1919.netlify.app/">
+                                        <img class="goto fixLinkForImage" src="./source/goto.png" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="fix_flex hide" data-aos="fade-in">
-                    <div class="project-image">
-                        <a href="https://github.com/gaurav7ingh/tedious-view-7935" target="_blank">
-                            <img class="fixImageSizeForTheProject" style="z-index: 1;"
-                                src="./source/cims.png" />
-                        </a>
-                    </div>
-                    <div class="project-content" data-aos="fade-in">
-                        <div>
-                            <p class="project-overline">Featured Project</p>
-                            <h3 class="project-title"><a href="https://github.com/gaurav7ingh/tedious-view-7935"
-                                    target="_blank">Crime Management System</a></h3>
-                            <div class="project-description">
-                                <p>
-                                    This is a console based program. Main aim of this system is to maintain and manage detailed information on the crime that happened in an area under a particular police station. It's a individual project completed in 5 days.
-                                </p>
-                            </div>
-                            <ul class="project-tech-list">
-                                <li><img src="source/java1.png"></li>
-                                <li><img src="source/mysql.png"></li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/gaurav7ingh/tedious-view-7935" target="_blank">
-                                    <img class="git fixLinkForImage" src="./source/github.png" />
-                                </a>
-                                <a target="_blank" href="https://drive.google.com/file/d/12BbeQDwfdy2fiQ7IljrWwyrvfWif724P/view?usp=sharing">
-                                    <img class="goto fixLinkForImage" src="./source/goto.png" />
-                                </a>
+                    <div class="fix_flex hide" data-aos="fade-in">
+                        <div class="project-image">
+                            <a href="https://github.com/gaurav7ingh/tedious-view-7935" target="_blank">
+                                <img class="fixImageSizeForTheProject" style="z-index: 1;" src="./source/cims.png" />
+                            </a>
+                        </div>
+                        <div class="project-content" data-aos="fade-in">
+                            <div>
+                                <p class="project-overline">Featured Project</p>
+                                <h3 class="project-title"><a href="https://github.com/gaurav7ingh/tedious-view-7935" target="_blank">Crime Management System</a></h3>
+                                <div class="project-description">
+                                    <p>
+                                        This is a console based program. Main aim of this system is to maintain and manage detailed information on the crime that happened in an area under a particular police station. It's a individual
+                                        project completed in 5 days.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li><img src="source/java1.png" /></li>
+                                    <li><img src="source/mysql.png" /></li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/gaurav7ingh/tedious-view-7935" target="_blank">
+                                        <img class="git fixLinkForImage" src="./source/github.png" />
+                                    </a>
+                                    <a target="_blank" href="https://drive.google.com/file/d/12BbeQDwfdy2fiQ7IljrWwyrvfWif724P/view?usp=sharing">
+                                        <img class="goto fixLinkForImage" src="./source/goto.png" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- this is contact section  -->
-        <div class="contact" id="contactMeSection" data-aos="fade-in">
-            <h1 class="headding">Get In Touch</h1>
-            <hr />
-            <div class="max-width">
-                <h2 class="font">Let's
-                    Connect</h2>
-                <div class="contact-content">
-                    <div class="column left" data-aos="fade-in">
-                        <div class="icons">
-                            <a href="mailto:gauravsingh99626@gmail.com">
-                                <div class="row">
-                                    <img src="source/mail.png" />
-                                    <div class="info">
-                                        <div class="head"></div>
-                                        <div class="sub-title">
-                                            gauravsingh99626@gmail.com
+            <!-- this is contact section  -->
+            <div class="contact" id="contactMeSection" data-aos="fade-in">
+                <h1 class="headding">Get In Touch</h1>
+                <hr />
+                <div class="max-width">
+                    <h2 class="font">Let's Connect</h2>
+                    <div class="contact-content">
+                        <div class="column left" data-aos="fade-in">
+                            <div class="icons">
+                                <a href="mailto:gauravsingh99626@gmail.com">
+                                    <div class="row">
+                                        <img src="source/mail.png" />
+                                        <div class="info">
+                                            <div class="head"></div>
+                                            <div class="sub-title">
+                                                gauravsingh99626@gmail.com
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/gaurav-singh0/" target="_blank">
-                                <div class="row">
-                                    <img src="source/linkedin.png" />
-                                    <div class="info">
-                                        <div class="sub-title">Linkedin</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/gaurav-singh0/" target="_blank">
+                                    <div class="row">
+                                        <img src="source/linkedin.png" />
+                                        <div class="info">
+                                            <div class="sub-title">Linkedin</div>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="https://github.com/gaurav7ingh" target="_blank">
-                                <div class="row">
-                                    <img src="source/github.png" />
+                                </a>
+                                <a href="https://github.com/gaurav7ingh" target="_blank">
+                                    <div class="row">
+                                        <img src="source/github.png" />
 
+                                        <div class="info">
+                                            <!-- <div class="head">Email</div> -->
+                                            <div class="sub-title">GitHub</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="row">
+                                    <img src="source/phone.png" />
                                     <div class="info">
                                         <!-- <div class="head">Email</div> -->
-                                        <div class="sub-title">GitHub</div>
+                                        <div class="sub-title">+91 9368644155</div>
                                     </div>
-                                </div>
-                            </a>
-
-                            <div class="row">
-                                <img src="source/phone.png" />
-                                <div class="info">
-                                    <!-- <div class="head">Email</div> -->
-                                    <div class="sub-title">+91 9368644155</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="column right" data-aos="fade-in">
-                        <div class="text" style="font-family: var(--font-sans); font-size: 22px;">Message me</div>
-                        <form id="my_form" action="https://formsubmit.co/gauravsingh99626@gmail.com" method="POST"
-                            target="_blank">
-                            <div class="fields">
-                                <div class="field name">
-                                    <input type="text" placeholder="Name" name="Name" required />
+                        <div class="column right" data-aos="fade-in">
+                            <div class="text" style="font-family: var(--font-sans); font-size: 22px;">Message me</div>
+                            <form id="my_form" action="https://formsubmit.co/gauravsingh99626@gmail.com" method="POST" target="_blank">
+                                <div class="fields">
+                                    <div class="field name">
+                                        <input type="text" placeholder="Name" name="Name" required />
+                                    </div>
+                                    <div class="field email">
+                                        <input type="email" placeholder="Email" name="Email" required />
+                                    </div>
                                 </div>
-                                <div class="field email">
-                                    <input type="email" placeholder="Email" name="Email" required />
+                                <div class="field">
+                                    <input type="text" placeholder="Subject" name="Subject" required />
                                 </div>
-                            </div>
-                            <div class="field">
-                                <input type="text" placeholder="Subject" name="Subject" required />
-                            </div>
-                            <div class="field textarea">
-                                <textarea cols="30" rows="10" name="Message" placeholder="Message.."
-                                    required></textarea>
-                            </div>
-                            <div class="button-area">
-                                <button type="submit" onclick="submitForm()">Send message</button>
-                            </div>
-                        </form>
+                                <div class="field textarea">
+                                    <textarea cols="30" rows="10" name="Message" placeholder="Message.." required></textarea>
+                                </div>
+                                <div class="button-area">
+                                    <button type="submit" onclick="submitForm()">Send message</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- this is foooter for the page  -->
+            <hr />
+            <footer style="margin-bottom: 20px;">
+                <div id="fixFooter">
+                    <p style="font-family: var(--font-mono);">Build by <mark class="decorate">*Gaurav Singh*</mark></p>
+                    <p style="font-family: var(--font-mono); font-size: 17px;">Thank You</p>
+                </div>
+            </footer>
+
+            <!-- scripts -->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    offset: 150,
+                    duration: 1000,
+                });
+            </script>
+
+            <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+
+            <script src="./index.js"></script>
         </div>
-
-        <!-- this is foooter for the page  -->
-        <hr />
-        <footer style="margin-bottom: 20px;">
-            <div id="fixFooter">
-                <p style="font-family: var(--font-mono);">Build by <mark class="decorate">*Gaurav Singh*</mark></p>
-                <p style="font-family: var(--font-mono); font-size: 17px;">Thank You</p>
-            </div>
-        </footer>
-
-
-        <!-- scripts -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                offset: 150,
-                duration: 1000,
-            });
-        </script>
-
-        <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-
-        <script src="./index.js"></script>
-    </div>
-</body>
-
+    </body>
 </html>

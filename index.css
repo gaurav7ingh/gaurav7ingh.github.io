@@ -2,7 +2,7 @@
     --dark-navy: #020c1b;
     --navy: #0a192f;
     --light-navy: #064663;
-    --lightest-navy: #256D85;
+    --lightest-navy: #256d85;
     --navy-shadow: #1a374dcc;
     --dark-slate: #495670;
     --slate: #8892b0;
@@ -18,15 +18,12 @@
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-
-
 .font {
     font-family: var(--font-sans);
     font-size: 22px;
     color: var(--cyan);
     font-weight: 400;
 }
-
 
 .color {
     color: var(--slate);
@@ -43,8 +40,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-
 
 ::-webkit-scrollbar {
     width: 12px;
@@ -65,11 +60,9 @@
     color: var(--lightest-slate);
 }
 
-
 #checkBox,
 #ham {
     display: none;
-
 }
 
 #nav {
@@ -171,7 +164,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .linksForContact {
@@ -277,9 +269,8 @@ mark {
 .individualStat>div:nth-child(1):hover {
     background-color: var(--cyan-tint);
     border: 1px solid var(--cyan);
-    position: relative;
-    cursor: pointer;
     top: -4;
+    cursor: pointer;
 }
 
 .individualStat {
@@ -322,7 +313,6 @@ mark {
 #mainContainerForSkill * {
     background: none;
     padding-bottom: 15px;
-
 }
 
 .skillS {
@@ -374,24 +364,22 @@ mark {
     display: flex;
     gap: 15px;
     margin-top: 20px;
-    padding: 12px;
+    padding: 10px;
 }
 
-.fix_flex:hover{
+.fix_flex:hover {
     border: 1px solid var(--dark-slate);
     border-radius: 3px;
-    padding: 8px;
+    padding: 9px;
 }
 
 #myself>div {
     width: 50%;
-
 }
 
 #myself>div>p {
     line-height: 1.3;
     font-family: var(--font-sans);
-
 }
 
 #myImage {
@@ -412,26 +400,9 @@ mark {
     margin: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .project-content {
     width: 83%;
 }
-
 
 .project-content * {
     background: transparent;
@@ -478,8 +449,11 @@ mark {
     margin: 25px 0px 10px;
     list-style: none;
     width: 100%;
-    justify-content: space-around;
-    padding-left: 50%;
+    justify-content: right;
+}
+
+.project-tech-list li {
+    padding-left: 15px;
 }
 
 .project-tech-list li>img {
@@ -499,25 +473,10 @@ mark {
     width: 25;
 }
 
-
-
-
-
 .project-links {
     margin-top: 15px;
     height: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 #fixFooter {
     display: flex;
@@ -554,14 +513,12 @@ mark {
     display: flex;
     width: 750px;
     font-family: Helvetica, arial;
-    border: 1px solid #DDDDDD;
+    border: 1px solid #dddddd;
     border-radius: 3px;
     min-height: 243px;
     text-align: center;
     margin: 0 auto;
 }
-
-
 
 #educationInMasai>div {
     width: 33%;
@@ -574,9 +531,7 @@ mark {
 
 hr {
     margin: 16px 0px;
-
 }
-
 
 .calendar {
     width: 100%;
@@ -588,8 +543,7 @@ hr {
     margin-bottom: 30px;
 }
 
-
-rect.ContributionCalendar-day[data-level='0'] {
+rect.ContributionCalendar-day[data-level="0"] {
     fill: var(--light-slate);
 }
 
@@ -638,13 +592,19 @@ rect.ContributionCalendar-day[data-level='0'] {
     font-family: var(--font-mono);
 }
 
-ul {
+#techStack ul {
     list-style-image: url(./source/arrow.png);
     margin-left: 20px;
     margin-right: 40px;
     line-height: 25px;
 }
 
+#techStack>ul>li:hover{
+    background-color: var(--cyan-tint);
+    border-radius: 3px;
+    cursor: default;
+    padding: 2px;
+}
 
 /* contact section */
 
@@ -707,10 +667,6 @@ ul {
 .contact .contact-content .info .sub-title {
     color: var(--lightest-slate);
 }
-
-/* .row .info .sub-title a:hover{
-    
-} */
 
 .contact .right form .fields {
     margin-top: 20px;
@@ -797,11 +753,10 @@ rect {
 }
 
 .right form .button-area button:hover {
-
     background: var(--cyan-tint);
 }
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width: 1080px) {
     .fixImageSizeForTheProject {
         opacity: 1;
     }
@@ -832,11 +787,6 @@ rect {
         box-shadow: rgba(6, 33, 60, 0.2) 0px 8px 24px;
     }
 
-    .project-tech-list {
-        width: 80%;
-        padding-left: 10px;
-    }
-
     .img {
         height: auto;
     }
@@ -850,7 +800,7 @@ rect {
     }
 
     .project-description {
-        width: 100%
+        width: 100%;
     }
 
     .project-content {
@@ -858,10 +808,7 @@ rect {
     }
 }
 
-
-
-@media screen and (max-width:800px) {
-
+@media screen and (max-width: 800px) {
     .fixImageSizeForTheProject {
         width: 568px;
     }
@@ -871,7 +818,6 @@ rect {
         flex-direction: column;
         gap: 20px;
     }
-
 
     h1 {
         font-size: x-large;
@@ -884,7 +830,6 @@ rect {
     .project-title {
         background: none;
     }
-
 
     .project-content {
         background-repeat: no-repeat;
@@ -1012,10 +957,7 @@ rect {
 
     #project {
         margin: auto;
-
     }
-
-
 
     .project-content {
         text-align: left;
@@ -1039,22 +981,31 @@ rect {
         padding: 5px;
     }
 
+    .project-tech-list {
+        justify-content: left;
+        margin-left: 0px;
+        padding-left: 0;
+    }
 
+    .project-tech-list li {
+        padding-left: 0;
+        padding-right: 15px;
+    }
 
     .fixLinkForImage {
-        left: 20px;
+        left: 27px;
     }
 
     .goto {
-        left: 55px;
+        left: 65px;
     }
 
     .left .git {
-        left: 25;
+        left: 30;
     }
 
     .left .goto {
-        left: 55px;
+        left: 65px;
     }
 
     .project-image {
@@ -1067,7 +1018,6 @@ rect {
         margin-left: 5%;
     }
 
-
     .block {
         display: block;
         margin-left: auto;
@@ -1079,6 +1029,12 @@ rect {
 
     .skillS>div>img {
         padding: 10px;
+    }
+
+    
+    .softS {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .float-right {
@@ -1114,8 +1070,7 @@ rect {
     }
 }
 
-
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .project-content {
         padding-top: 0;
     }
@@ -1126,15 +1081,9 @@ rect {
         margin-left: 25%;
     }
 
-    .project-tech-list {
-        width: 80%;
-        padding-left: 10px;
-    }
-
     .project-description {
         width: 100%;
     }
-
 }
 
 .hide {
