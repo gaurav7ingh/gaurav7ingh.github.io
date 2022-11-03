@@ -643,7 +643,6 @@ rect.ContributionCalendar-day[data-level="0"] {
     display: flex;
     height: 65px;
     align-items: center;
-    font-size: 19px;
     color: var(--cyan);
     margin-top: 10px;
     padding-left: 20px;
@@ -666,6 +665,7 @@ rect.ContributionCalendar-day[data-level="0"] {
 
 .contact .contact-content .info .sub-title {
     color: var(--lightest-slate);
+    font-family: var(--font-sans);
 }
 
 .contact .right form .fields {
@@ -1064,6 +1064,10 @@ rect {
         font-size: 16px;
     }
 
+    .contact .contact-content .info .sub-title{
+        font-size: 16px;
+    }
+
     .fix_flex {
         flex-direction: column;
         gap: 0;
@@ -1083,6 +1087,13 @@ rect {
 
     .project-description {
         width: 100%;
+    }
+    .contact .contact-content .info .sub-title{
+        font-size: 14px;
+    }
+
+    .contact .contact-content .row .info {
+        margin-left: 15px;
     }
 }
 
