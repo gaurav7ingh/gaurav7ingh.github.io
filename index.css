@@ -382,6 +382,7 @@ mark {
 
 #myself>div:nth-child(1) {
     width: 60%;
+    margin-right: 15px;
 }
 
 #myself>div>p {
@@ -784,8 +785,11 @@ rect {
     .fix_flex {
         flex-direction: column;
         gap: 0;
-        padding: 0;
+        border-radius: 3px;
+        padding: 9px;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
+    
 
     .fixImageSizeForTheProject {
         opacity: 1;
@@ -1004,7 +1008,7 @@ rect {
     }
 
     #myself>#myImage,
-    #myself>div {
+    #myself>div:first-child {
         width: 100%;
         margin: 30px 0 20px 0;
     }
@@ -1029,7 +1033,7 @@ rect {
     .stats {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        margin-left: 5%;
+        margin-left: 15%;
     }
 
     .block {
