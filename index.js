@@ -87,3 +87,9 @@ function submitForm() {
     frm.reset(); // Reset all form data
     return false; // Prevent page refresh
 }
+
+function download() {
+
+    location.href = "http://t.ly/MC7n/";
+
+}
