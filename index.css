@@ -369,7 +369,7 @@ mark {
     padding: 11px 12px;
 }
 
-.fix_flex *{
+.fix_flex * {
     background: transparent;
 }
 
@@ -411,7 +411,7 @@ mark {
     width: 83%;
 }
 
-li{
+li {
     font-size: 18px;
 }
 
@@ -599,13 +599,10 @@ rect.ContributionCalendar-day[data-level="0"] {
 .project-image {
     margin-top: 20px;
     width: 100%;
-    display: flex;
-    align-items: center;
 }
 
 .fixImageSizeForTheProject {
     width: 100%;
-    display: block;
     opacity: 0.9;
 }
 
@@ -784,6 +781,12 @@ rect {
 }
 
 @media screen and (max-width: 1080px) {
+    .fix_flex {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
     .fixImageSizeForTheProject {
         opacity: 1;
     }
@@ -822,22 +825,77 @@ rect {
         margin-left: auto;
     }
 
-    .project-title {
-        font-size: 22px;
-    }
-
     .project-description {
         width: 100%;
     }
 
     .project-content {
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        text-align: left;
+        left: 0;
         width: 100%;
+        padding: 10px;
+        background-color: var(--light-navy);
+        box-shadow: 0 10px 30px -15px var(--dark-navy);
     }
+
+    .project-description {
+        text-align: left;
+        background: none;
+        padding: 0;
+        width: 80%;
+        margin-left: 0;
+        box-shadow: none;
+    }
+
+    .project-description>p {
+        padding: 5px;
+    }
+
+    .project-tech-list {
+        justify-content: left;
+        margin-left: 0px;
+        padding-left: 0;
+    }
+
+    .project-tech-list li {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+
+    .fixLinkForImage {
+        left: 27px;
+    }
+
+    .goto {
+        left: 65px;
+    }
+
+    .left .git {
+        left: 30;
+    }
+
+    .left .goto {
+        left: 65px;
+    }
+
+    .project-title {
+        background: none;
+        margin: 0px 0px 10px;
+        text-align: left;
+    }
+
+    .project-overline {
+        text-align: left;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
     .fixImageSizeForTheProject {
-        width: 568px;
+        width: 100%;
     }
 
     .git_stats {
@@ -854,16 +912,7 @@ rect {
         font-size: medium;
     }
 
-    .project-title {
-        background: none;
-    }
 
-    .project-content {
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: auto;
-        padding: 10px;
-    }
 
     .imgMatginAuto {
         display: block;
@@ -973,70 +1022,8 @@ rect {
         cursor: pointer;
     }
 
-    .project-overline {
-        text-align: left;
-    }
-
-    .project-title {
-        margin: 0px 0px 10px;
-        text-align: left;
-    }
-
     #project {
         margin: auto;
-    }
-
-    .project-content {
-        text-align: left;
-        left: 0;
-        width: 100%;
-        padding: 10px;
-        background-color: var(--light-navy);
-        box-shadow: 0 10px 30px -15px var(--dark-navy);
-    }
-
-    .project-description {
-        text-align: left;
-        background: none;
-        padding: 0;
-        width: 80%;
-        margin-left: 0;
-        box-shadow: none;
-    }
-
-    .project-description>p {
-        padding: 5px;
-    }
-
-    .project-tech-list {
-        justify-content: left;
-        margin-left: 0px;
-        padding-left: 0;
-    }
-
-    .project-tech-list li {
-        padding-left: 0;
-        padding-right: 15px;
-    }
-
-    .fixLinkForImage {
-        left: 27px;
-    }
-
-    .goto {
-        left: 65px;
-    }
-
-    .left .git {
-        left: 30;
-    }
-
-    .left .goto {
-        left: 65px;
-    }
-
-    .project-image {
-        width: 0%;
     }
 
     .stats {
@@ -1095,10 +1082,7 @@ rect {
         font-size: 16px;
     }
 
-    .fix_flex {
-        flex-direction: column;
-        gap: 0;
-    }
+
 }
 
 @media screen and (max-width: 480px) {
