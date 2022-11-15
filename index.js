@@ -90,6 +90,7 @@ function submitForm() {
 
 function download() {
 
-    location.href = "http://t.ly/MC7n/";
+    window.open("./source/Gaurav_Singh_Resume.pdf","_blank");
 
 }
+
