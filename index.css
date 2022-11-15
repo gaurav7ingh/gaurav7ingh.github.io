@@ -616,7 +616,7 @@ rect.ContributionCalendar-day[data-level="0"] {
 
 #techStack {
     display: flex;
-    margin-top: 40px;
+    margin-top: 25px;
     font-family: var(--font-mono);
 }
 
