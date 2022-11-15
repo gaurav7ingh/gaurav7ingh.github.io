@@ -20,7 +20,7 @@
 
 .font {
     font-family: var(--font-sans);
-    font-size: 22px;
+    font-size: 23px;
     color: var(--cyan);
     font-weight: 400;
     margin-bottom: 10px;
@@ -795,6 +795,10 @@ rect {
 .position-relative {
     border: 1px solid rgba(100, 100, 100, 0.514);
     border-radius: 3px;
+}
+
+hr{
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1080px) {
