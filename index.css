@@ -724,8 +724,8 @@ rect.ContributionCalendar-day[data-level="0"] {
 }
 
 rect {
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
 }
 
 .row:hover * {
@@ -816,6 +816,10 @@ hr{
     height: 500px;
 }
 
+.js-calendar-graph-svg{
+    zoom: 120%;
+}
+
 @media screen and (max-width: 1080px) {
     .fix_flex {
         flex-direction: column;
@@ -840,9 +844,10 @@ hr{
         z-index: 1;
     }
 
-    .calendar .js-calendar-graph-svg {
+    .calendar>.position-relative .js-calendar-graph-svg {
         position: absolute;
         right: 5px;
+        zoom: 115%;
     }
 
     .calendar {
