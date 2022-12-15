@@ -817,7 +817,7 @@ hr{
 }
 
 .js-calendar-graph-svg{
-    zoom: 120%;
+    zoom: 110%;
 }
 
 @media screen and (max-width: 1080px) {
@@ -847,7 +847,7 @@ hr{
     .calendar>.position-relative .js-calendar-graph-svg {
         position: absolute;
         right: 5px;
-        zoom: 115%;
+        zoom: 105%;
     }
 
     .calendar {

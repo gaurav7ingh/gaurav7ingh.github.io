@@ -73,12 +73,10 @@ let btn = document.getElementById("btn1");
 btn.addEventListener("click", () => {
     let res = btn.innerText;
     if (res == "Contact Me" || res == "Email") {
-        location.href = "mailto:gauravsingh99626@gmail.com";
+        location.href = "mailto:gtogaurav@gmail.com";
     } else if (res == "Linked In") {
         location.href = "https://www.linkedin.com/in/gaurav-singh0/";
-    } else if (res == "Instagram") {
-        location.href = "https://www.instagram.com/gaurav_7ingh/";
-    }
+    } 
 });
 
 function submitForm() {
