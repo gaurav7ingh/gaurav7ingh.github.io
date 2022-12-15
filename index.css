@@ -325,8 +325,12 @@ mark {
 }
 
 .skillS>div>img {
-    width: 100%;
+    width: 85%;
     padding: 50px;
+}
+
+.softS>div>img{
+    width: 100%;
 }
 
 .skillS>div {
@@ -1083,6 +1087,9 @@ hr{
         padding: 10px;
     }
 
+    .softS>div>img {
+        width: 65%;
+    }
 
     .softS {
         display: grid;
